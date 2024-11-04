@@ -16,6 +16,7 @@ struct ContentView: View {
             Text("Hello, world!")
                 .font(.largeTitle)
                 .background(Color.red)
+            // this is a modification
         }
         .padding()
     }
