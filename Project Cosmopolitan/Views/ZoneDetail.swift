@@ -11,7 +11,8 @@ struct ZoneDetail: View {
     @EnvironmentObject var modelData: ModelData
     
     var body: some View {
-        Text(modelData.selectedZone?.name ?? "No Zone")
+        ParameterListView()
+        //Text(modelData.selectedZone?.name ?? "No Zone")
             .navigationTitle(modelData.selectedZone?.name ?? "No Zone")
             .toolbar {
                 NavigationLink(destination: GeneralInfoView()) {
