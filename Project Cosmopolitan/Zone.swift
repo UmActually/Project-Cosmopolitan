@@ -1,5 +1,5 @@
 //
-//  MapViewModel.swift
+//  Models.swift
 //  Project Cosmopolitan
 //
 //  Created by Leonardo Corona Garza on 08/11/24.
@@ -10,34 +10,26 @@ import MapKit
 
 typealias Coords = CLLocationCoordinate2D
 
-enum MapViewModel {
-    static let naplesRegion = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 40.8522, longitude: 14.265),
-        span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
-    )
-    
-    static let naplesZones: [Zone] = {
-        let url = Bundle.main.url(forResource: "Zones", withExtension: "json")!
-        let decoder = JSONDecoder()
-        return try! decoder.decode([Zone].self, from: Data(contentsOf: url))
-    }()
-}
-
 struct Zone: Decodable, Identifiable {
-    let id: String
+    let id: Int
+    let idString: String
     let name: String
     let vertices: [Coords]
     let center: Coords
+    let neighborhoodID: Int
+    let neighborhood: String
     
     enum CodingKeys: String, CodingKey {
-        case id, name, vertices
+        case id, idString, name, vertices, neighborhoodID
     }
     
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        id = try container.decode(String.self, forKey: .id)
+        id = try container.decode(Int.self, forKey: .id)
+        idString = try container.decode(String.self, forKey: .idString)
         name = try container.decode(String.self, forKey: .name)
+        neighborhoodID = try container.decode(Int.self, forKey: .neighborhoodID)
         
         let rawVertices = try container.decode([[Double]].self, forKey: .vertices)
         var vertices = [Coords]()
@@ -46,7 +38,15 @@ struct Zone: Decodable, Identifiable {
         }
         self.vertices = vertices
         center = polygonCentroid(vertices: vertices)
+        
+        neighborhood = Self.neighborhoods[neighborhoodID - 1]
     }
+    
+    static let neighborhoods: [String] = {
+        let url = Bundle.main.url(forResource: "Neighborhoods", withExtension: "json")!
+        let decoder = JSONDecoder()
+        return try! decoder.decode([String].self, from: Data(contentsOf: url))
+    }()
 }
 
 func polygonCentroid(vertices: [Coords]) -> Coords {
