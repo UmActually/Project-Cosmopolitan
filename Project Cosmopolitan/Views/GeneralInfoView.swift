@@ -29,8 +29,8 @@ struct GeneralInfoView: View {
                             .font(.headline)
                             .foregroundStyle(.accent)
                         Spacer()
-                        Image(systemName: item.isExpanded ? "chevron.down.circle" : "chevron.right.circle")
-                            .resizable()
+                        Image(systemName: item.isExpanded ? "chevron.down" : "chevron.right")
+//                            .resizable()
                             .frame(width: 20, height: 20)
                     }
                 }
