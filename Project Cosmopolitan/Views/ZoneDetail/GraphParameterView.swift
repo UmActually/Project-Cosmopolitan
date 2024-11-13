@@ -42,7 +42,40 @@ struct ParameterGraphVIew: View {
     }
 }
 
-#Preview {
-    ParameterGraphVIew()
+struct GraphParameterView: View {
+    let parameter: RecordedParameter
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            HStack{
+                Text(parameter.type.name + ":")
+                    .font(.headline)
+                    .foregroundColor(Color.blue)
+                Text((String(format: "%.2f", parameter.value)))
+            }
+            Chart {
+                BarMark(
+                    x: .value("Parameter", parameter.value)
+                )
+                if let min = parameter.type.minSuggestedValue, let max = parameter.type.maxSuggestedValue {
+                    RuleMark(
+                        x: .value("MinSuggestedValue", min)
+                    )
+                    .foregroundStyle(.columbiaBlue)
+                    RuleMark(
+                        x: .value("MinSuggestedValue", max)
+                    )
+                    .foregroundStyle(.rustyRed)
+                }
+                if let benchmark = parameter.type.benchmarkValue,
+                   benchmark != parameter.type.maxSuggestedValue {
+                    RuleMark(
+                        x: .value("Benchmark", benchmark)
+                    )
+                    .foregroundStyle(.jet)
+                }
+            }
+            .frame(height: 50)
+        }
+    }
 }
-

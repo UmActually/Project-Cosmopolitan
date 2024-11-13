@@ -59,6 +59,11 @@ final class UserLocationModel: NSObject, ObservableObject, CLLocationManagerDele
     }
 }
 
+final class QualityModel {
+    static let parameters: [Parameter] = decodeJSON(from: "Parameters")
+    static let zonesQuality: [ZoneQuality] = decodeJSON(from: "Quality")
+}
+
 final class GeneralInfoModel: ObservableObject {
     @Published var generalInfo: [GeneralInfoItem] = decodeJSON(from: "GeneralInfo")
 }

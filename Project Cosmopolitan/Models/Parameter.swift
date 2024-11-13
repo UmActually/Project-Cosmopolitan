@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-struct Parameter: Identifiable {
-    
+struct _Parameter: Identifiable {
     var id: UUID = UUID()
     var name: String
     var detectedValue: Double
@@ -17,4 +16,14 @@ struct Parameter: Identifiable {
     var MaxSuggestedValue: Double
     var unitOfMeasure: String
     var showChart: Bool
+}
+
+struct Parameter: Decodable, Identifiable {
+    let id: Int
+    let name: String
+    let benchmarkValue: Double?
+    let minSuggestedValue: Double?
+    let maxSuggestedValue: Double?
+    let unitOfMeasurement: String?
+    let displaysAsChart: Bool
 }

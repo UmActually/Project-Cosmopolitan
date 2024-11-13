@@ -42,6 +42,10 @@ struct Zone: Decodable, Identifiable {
         neighborhood = Self.neighborhoods[neighborhoodID - 1]
     }
     
+    var quality: ZoneQuality {
+        QualityModel.zonesQuality[id - 1]
+    }
+    
     static let neighborhoods: [String] = {
         let url = Bundle.main.url(forResource: "Neighborhoods", withExtension: "json")!
         let decoder = JSONDecoder()

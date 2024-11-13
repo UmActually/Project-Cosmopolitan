@@ -37,6 +37,29 @@ struct MicrobiologicalParametersView: View {
     }
 }
 
-#Preview {
-    MicrobiologicalParametersView()
+struct TextParameterView: View {
+    let parameter: RecordedParameter
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            Text(parameter.type.name)
+                .font(.headline)
+                .foregroundColor(Color.blue)
+            
+            VStack(alignment: .leading) {
+                HStack {
+                    Text("Detected Value: \(String(format: "%.2f", parameter.value))")
+                    if let unit = parameter.type.unitOfMeasurement {
+                        Text(unit)
+                    }
+                }
+                
+                if let min = parameter.type.minSuggestedValue, let max = parameter.type.maxSuggestedValue {
+                    Text("Suggested Values: \(String(format: "%.2f", min)) to \(String(format: "%.2f", max))")
+                }
+            }
+            .font(.subheadline)
+            .foregroundColor(.black)
+        }
+    }
 }
