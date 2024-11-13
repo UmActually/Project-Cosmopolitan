@@ -9,42 +9,59 @@ import SwiftUI
 import MapKit
 
 struct ZonesMapView: UIViewRepresentable {
-    let zones: [Zone]
-    @Binding var selectedZone: Zone?
+    @EnvironmentObject var modelData: ModelData
     
     func makeUIView(context: Context) -> MKMapView {
-        let mapView = MKMapView()
-        mapView.region = MapViewModel.naplesRegion
+        modelData.mkMapView.delegate = context.coordinator
+        let mapView = modelData.mkMapView
+        
+        mapView.region = modelData.cameraRegion
         mapView.pointOfInterestFilter = .excludingAll
         mapView.mapType = .standard
         mapView.isPitchEnabled = false
         mapView.isRotateEnabled = false
+        mapView.showsUserLocation = true
         
-        for zone in zones {
+        for zone in modelData.naplesZones {
             let polygonOverlay = MKPolygon(coordinates: zone.vertices, count: zone.vertices.count)
             mapView.addOverlay(polygonOverlay)
             let annotation = MKPointAnnotation()
             annotation.coordinate = zone.center
             annotation.title = zone.name
+            annotation.subtitle = String(zone.id)
             mapView.addAnnotation(annotation)
         }
-        
-        mapView.delegate = context.coordinator
         
         return mapView
     }
     
-    func updateUIView(_ uiView: MKMapView, context: Context) {}
+    func updateUIView(_ uiView: MKMapView, context: Context) {
+        if modelData.moveCameraRegion {
+            UIView.animate(withDuration: 0.5) {
+                uiView.setRegion(modelData.cameraRegion, animated: true)
+            }
+        }
+    }
     
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
         
-    class Coordinator: NSObject, MKMapViewDelegate {
+    class Coordinator: NSObject, MKMapViewDelegate, CLLocationManagerDelegate, UIGestureRecognizerDelegate {
         var parent: ZonesMapView
+        var locationManager = CLLocationManager()
+        var gestureRecognizer = UITapGestureRecognizer()
         
         init(_ parent: ZonesMapView) {
             self.parent = parent
+            super.init()
+            
+            self.locationManager.delegate = self
+            self.locationManager.requestWhenInUseAuthorization()
+            
+            self.gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+            self.gestureRecognizer.delegate = self
+            self.parent.modelData.mkMapView.addGestureRecognizer(gestureRecognizer)
         }
         
         func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
@@ -68,13 +85,13 @@ struct ZonesMapView: UIViewRepresentable {
             let label = UILabel()
             label.text = annotation.title ?? ""
             label.textColor = .black
-            label.backgroundColor = UIColor.white.withAlphaComponent(0.6)
-            label.font = UIFont.systemFont(ofSize: 12)
+            label.backgroundColor = UIColor.white.withAlphaComponent(0.8)
+            label.font = UIFont.systemFont(ofSize: 8)
             label.textAlignment = .center
             label.layer.cornerRadius = 8
             label.layer.masksToBounds = true
             
-            let padding: CGFloat = 8
+            let padding: CGFloat = 6
             label.frame = CGRect(
                 x: 0,
                 y: 0,
@@ -87,22 +104,33 @@ struct ZonesMapView: UIViewRepresentable {
             return annotationView
         }
         
-        func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-            if let annotation = view.annotation as? MKPointAnnotation,
-               let zone = parent.zones.first(where: { $0.name == annotation.title }) {
-                parent.selectedZone = zone
-            }
-        }
-        
         func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
             let latitudeDelta = mapView.region.span.latitudeDelta
 
             let threshold: CLLocationDegrees = 0.08
 
             for annotation in mapView.annotations {
-                if let view = mapView.view(for: annotation) {
+                if !(annotation is MKUserLocation), let view = mapView.view(for: annotation) {
                     view.isHidden = latitudeDelta > threshold
                 }
+            }
+        }
+
+        func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+            switch manager.authorizationStatus {
+            case .authorizedWhenInUse, .authorizedAlways:
+                parent.modelData.mkMapView.showsUserLocation = true
+                locationManager.startUpdatingLocation()
+            default:
+                break
+            }
+        }
+        
+        @objc func handleTap(_ gesture: UITapGestureRecognizer) {
+            let tapLocation = gestureRecognizer.location(in: parent.modelData.mkMapView)
+            let location = parent.modelData.mkMapView.convert(tapLocation, toCoordinateFrom: parent.modelData.mkMapView)
+            if let zone = parent.modelData.zoneOfLocation(location) {
+                parent.modelData.selectedZone = zone
             }
         }
     }

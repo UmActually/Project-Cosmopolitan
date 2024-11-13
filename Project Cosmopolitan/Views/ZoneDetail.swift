@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ZoneDetail: View {
-    let zone: Zone?
+    @EnvironmentObject var modelData: ModelData
     
     var body: some View {
-        Text(zone?.name ?? "No Zone")
-            .navigationTitle(zone?.name ?? "No Zone")
+        Text(modelData.selectedZone?.name ?? "No Zone")
+            .navigationTitle(modelData.selectedZone?.name ?? "No Zone")
     }
 }
