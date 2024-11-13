@@ -80,5 +80,10 @@ struct HomeSheet: View {
         DispatchQueue.main.async {
             modelData.moveCameraRegion = false
         }
+        
+        // Navigate to ZoneDetail
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            modelData.selectedZone = zone
+        }
     }
 }
