@@ -11,22 +11,15 @@ import MapKit
 final class ModelData: ObservableObject {
     @Published var manuallyReloadViews = false
     @Published var mkMapView = MKMapView()
+    @Published var sheetDetent = PresentationDetent.height(100)
     @Published var selectedZone: Zone?
-    
     @Published var cameraRegion = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 40.8522, longitude: 14.265),
         span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
     )
     
-    @Published var sheetDetent = PresentationDetent.height(100)
-    
-    private var locationManager = CLLocationManager()
     var moveCameraRegion = false
-    let naplesZones: [Zone] = {
-        let url = Bundle.main.url(forResource: "Zones", withExtension: "json")!
-        let decoder = JSONDecoder()
-        return try! decoder.decode([Zone].self, from: Data(contentsOf: url))
-    }()
+    let naplesZones: [Zone] = decodeJSON(from: "Zones")
     
     func zoneOfLocation(_ location: CLLocationCoordinate2D) -> Zone? {
         for (index, overlay) in mkMapView.overlays.enumerated() {
@@ -66,6 +59,10 @@ final class UserLocationModel: NSObject, ObservableObject, CLLocationManagerDele
     }
 }
 
+final class GeneralInfoModel: ObservableObject {
+    @Published var generalInfo: [GeneralInfoItem] = decodeJSON(from: "GeneralInfo")
+}
+
 extension MKCoordinateRegion {
     static func == (lhs: MKCoordinateRegion, rhs: MKCoordinateRegion) -> Bool {
         lhs.center.latitude == rhs.center.latitude && lhs.center.longitude == rhs.center.longitude && lhs.span.latitudeDelta == rhs.span.latitudeDelta && lhs.span.longitudeDelta == rhs.span.longitudeDelta
@@ -74,4 +71,10 @@ extension MKCoordinateRegion {
     static func != (lhs: MKCoordinateRegion, rhs: MKCoordinateRegion) -> Bool {
         !(lhs == rhs)
     }
+}
+
+func decodeJSON<T: Decodable>(from fileName: String) -> T {
+    let url = Bundle.main.url(forResource: fileName, withExtension: "json")!
+    let decoder = JSONDecoder()
+    return try! decoder.decode(T.self, from: Data(contentsOf: url))
 }
