@@ -38,7 +38,7 @@ struct MicrobiologicalParametersView: View {
 }
 
 struct TextParameterView: View {
-    let parameter: RecordedParameter
+    let parameter: ZoneParameter
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {

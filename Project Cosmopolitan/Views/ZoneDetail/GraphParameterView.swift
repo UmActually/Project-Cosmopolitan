@@ -43,7 +43,7 @@ struct ParameterGraphVIew: View {
 }
 
 struct GraphParameterView: View {
-    let parameter: RecordedParameter
+    let parameter: ZoneParameter
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
