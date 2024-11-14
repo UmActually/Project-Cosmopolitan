@@ -9,40 +9,31 @@ import SwiftUI
 import MapKit
 
 struct Home: View {
-    @State private var selectedZone: Zone?
-    @State private var showSheet = true
+    @EnvironmentObject var modelData: ModelData
     
     var body: some View {
         NavigationStack {
             ZStack {
-                ZonesMapView(zones: MapViewModel.naplesZones, selectedZone: $selectedZone)
+                ZonesMapView()
                     .ignoresSafeArea()
             }
-            .sheet(isPresented: $showSheet) {
-                HomeSheet(selectedZone: $selectedZone)
+            .sheet(isPresented: Binding(get: {
+                modelData.selectedZone == nil
+            }, set: {_ in})) {
+                HomeSheet()
                     .interactiveDismissDisabled()
-                    .presentationDetents([.height(100), .medium, .large])
+                    .presentationDetents([.height(100), .medium, .large], selection: $modelData.sheetDetent)
                     .presentationBackgroundInteraction(.enabled(upThrough: .medium))
             }
-            .navigationTitle("Home")
-            .navigationDestination(isPresented: Binding(
-                get: {
-                    let isSelected = selectedZone != nil
-                    showSheet = !isSelected
-                    return isSelected
-                }, set: {
-                    showSheet = !$0
-                    if !$0 {
-                        selectedZone = nil
-                    }
+            .navigationDestination(isPresented: Binding(get: {
+                modelData.selectedZone != nil
+            }, set: {
+                if !$0 {
+                    modelData.selectedZone = nil
                 }
-            )) {
-                ZoneDetail(zone: selectedZone)
+            })) {
+                ZoneDetail()
             }
         }
     }
-}
-
-#Preview {
-    Home()
 }
