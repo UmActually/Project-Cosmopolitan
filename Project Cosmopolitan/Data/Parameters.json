@@ -96,6 +96,6 @@
         "minSuggestedValue": null,
         "maxSuggestedValue": null,
         "unitOfMeasurement": "u.f.c./100 ml",
-        "displaysAsChart": true
+        "displaysAsChart": false
     }
 ]

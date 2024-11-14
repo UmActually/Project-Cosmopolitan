@@ -7,17 +7,6 @@
 
 import SwiftUI
 
-struct _Parameter: Identifiable {
-    var id: UUID = UUID()
-    var name: String
-    var detectedValue: Double
-    var benchmarkValue: Double
-    var MinSuggestedValue: Double
-    var MaxSuggestedValue: Double
-    var unitOfMeasure: String
-    var showChart: Bool
-}
-
 struct Parameter: Decodable, Identifiable {
     let id: Int
     let name: String
@@ -26,4 +15,6 @@ struct Parameter: Decodable, Identifiable {
     let maxSuggestedValue: Double?
     let unitOfMeasurement: String?
     let displaysAsChart: Bool
+    
+    static let parameters: [Self] = decodeJSON(from: "Parameters")
 }
