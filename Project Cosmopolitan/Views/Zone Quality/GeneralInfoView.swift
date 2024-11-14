@@ -30,7 +30,6 @@ struct GeneralInfoView: View {
                             .foregroundStyle(.accent)
                         Spacer()
                         Image(systemName: item.isExpanded ? "chevron.down" : "chevron.right")
-//                            .resizable()
                             .frame(width: 20, height: 20)
                     }
                 }

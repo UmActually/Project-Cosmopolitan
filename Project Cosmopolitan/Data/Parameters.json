@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "name": "Hardness",
+        "benchmarkValue": null,
+        "minSuggestedValue": 13,
+        "maxSuggestedValue": 38,
+        "unitOfMeasurement": null,
+        "displaysAsChart": true
+    },
+    {
+        "id": 2,
+        "name": "pH",
+        "benchmarkValue": null,
+        "minSuggestedValue": 6.5,
+        "maxSuggestedValue": 8.5,
+        "unitOfMeasurement": null,
+        "displaysAsChart": true
+    },
+    {
+        "id": 3,
+        "name": "Dry residue",
+        "benchmarkValue": null,
+        "minSuggestedValue": 100,
+        "maxSuggestedValue": 500,
+        "unitOfMeasurement": "mg/l",
+        "displaysAsChart": true
+    },
+    {
+        "id": 4,
+        "name": "Nitrate (NO₃)",
+        "benchmarkValue": 50,
+        "minSuggestedValue": 0,
+        "maxSuggestedValue": 50,
+        "unitOfMeasurement": "mg/l",
+        "displaysAsChart": true
+    },
+    {
+        "id": 5,
+        "name": "Nitrite (NO₂)",
+        "benchmarkValue": 50,
+        "minSuggestedValue": 0,
+        "maxSuggestedValue": 0.5,
+        "unitOfMeasurement": "mg/l",
+        "displaysAsChart": true
+    },
+    {
+        "id": 6,
+        "name": "Ammonium",
+        "benchmarkValue": 0.5,
+        "minSuggestedValue": 0,
+        "maxSuggestedValue": 0.5,
+        "unitOfMeasurement": "mg/l",
+        "displaysAsChart": true
+    },
+    {
+        "id": 7,
+        "name": "Fluoride",
+        "benchmarkValue": 1.5,
+        "minSuggestedValue": 0,
+        "maxSuggestedValue": 1.5,
+        "unitOfMeasurement": "mg/l",
+        "displaysAsChart": true
+    },
+    {
+        "id": 8,
+        "name": "Chloride",
+        "benchmarkValue": 250,
+        "minSuggestedValue": 0,
+        "maxSuggestedValue": 250,
+        "unitOfMeasurement": "mg/l",
+        "displaysAsChart": true
+    },
+    {
+        "id": 9,
+        "name": "Conductivity",
+        "benchmarkValue": 2500,
+        "minSuggestedValue": 0,
+        "maxSuggestedValue": 2500,
+        "unitOfMeasurement": "µS/cm",
+        "displaysAsChart": true
+    },
+    {
+        "id": 10,
+        "name": "Coliform bacteria",
+        "benchmarkValue": null,
+        "minSuggestedValue": null,
+        "maxSuggestedValue": null,
+        "unitOfMeasurement": "u.f.c./100 ml",
+        "displaysAsChart": false
+    },
+    {
+        "id": 11,
+        "name": "Escherichia coli",
+        "benchmarkValue": null,
+        "minSuggestedValue": null,
+        "maxSuggestedValue": null,
+        "unitOfMeasurement": "u.f.c./100 ml",
+        "displaysAsChart": false
+    }
+]

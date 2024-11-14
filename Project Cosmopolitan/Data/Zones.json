@@ -865,7 +865,64 @@
       ]
     ],
     "idString": "D01",
-    "neighborhoodID": 1
+    "neighborhoodID": 1,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 47,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 594,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 28,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 36,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 849,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 2,
@@ -3957,7 +4014,64 @@
       ]
     ],
     "idString": "D02",
-    "neighborhoodID": 1
+    "neighborhoodID": 1,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 48,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 519,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 4,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.1,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 12,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 741,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 3,
@@ -13877,7 +13991,64 @@
       ]
     ],
     "idString": "D03",
-    "neighborhoodID": 2
+    "neighborhoodID": 2,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 24,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.8,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 304,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 6,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.2,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 12,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 434,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 4,
@@ -14877,7 +15048,64 @@
       ]
     ],
     "idString": "D04",
-    "neighborhoodID": 2
+    "neighborhoodID": 2,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 25,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.7,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 302,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 6,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.2,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 13,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 431,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 5,
@@ -17065,7 +17293,64 @@
       ]
     ],
     "idString": "D05",
-    "neighborhoodID": 3
+    "neighborhoodID": 3,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 47,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 610,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 28,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 36,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 872,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 6,
@@ -17785,7 +18070,64 @@
       ]
     ],
     "idString": "D06",
-    "neighborhoodID": 1
+    "neighborhoodID": 1,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 49,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 601,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 18,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 35,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 859,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 7,
@@ -18437,7 +18779,64 @@
       ]
     ],
     "idString": "D07",
-    "neighborhoodID": 4
+    "neighborhoodID": 4,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 47,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.3,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 526,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 5,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.2,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 14,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 751,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 8,
@@ -18969,7 +19368,64 @@
       ]
     ],
     "idString": "D08",
-    "neighborhoodID": 4
+    "neighborhoodID": 4,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 45,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.3,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 526,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 5,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.1,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 14,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 751,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 9,
@@ -19921,7 +20377,64 @@
       ]
     ],
     "idString": "D09",
-    "neighborhoodID": 5
+    "neighborhoodID": 5,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 43,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 609,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 17,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 46,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 870,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 10,
@@ -25477,7 +25990,64 @@
       ]
     ],
     "idString": "D10",
-    "neighborhoodID": 5
+    "neighborhoodID": 5,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 45,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.3,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 525,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 4,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.2,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 14,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 750,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 11,
@@ -25917,7 +26487,64 @@
       ]
     ],
     "idString": "D11",
-    "neighborhoodID": 6
+    "neighborhoodID": 6,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 49,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 610,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 20,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 36,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 871,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 12,
@@ -26309,7 +26936,64 @@
       ]
     ],
     "idString": "D12",
-    "neighborhoodID": 6
+    "neighborhoodID": 6,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 48,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 609,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 20,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 36,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 870,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 13,
@@ -28085,7 +28769,64 @@
       ]
     ],
     "idString": "D13",
-    "neighborhoodID": 7
+    "neighborhoodID": 7,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 33,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.7,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 417,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 11,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.3,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 21,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 595,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 14,
@@ -30233,7 +30974,64 @@
       ]
     ],
     "idString": "D14",
-    "neighborhoodID": 7
+    "neighborhoodID": 7,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 33,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.6,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 417,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 11,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.3,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 21,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 595,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 15,
@@ -30681,7 +31479,64 @@
       ]
     ],
     "idString": "D15",
-    "neighborhoodID": 8
+    "neighborhoodID": 8,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 45,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.3,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 526,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 5,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.1,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 14,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 751,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 16,
@@ -31101,7 +31956,64 @@
       ]
     ],
     "idString": "D16",
-    "neighborhoodID": 9
+    "neighborhoodID": 9,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 27,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.7,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 344,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 8,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.2,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 15,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 492,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 17,
@@ -31525,7 +32437,64 @@
       ]
     ],
     "idString": "D18",
-    "neighborhoodID": 9
+    "neighborhoodID": 9,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 20,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.8,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 247,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 3,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.1,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 8,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 353,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 18,
@@ -31849,7 +32818,64 @@
       ]
     ],
     "idString": "D19",
-    "neighborhoodID": 8
+    "neighborhoodID": 8,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 20,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.8,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 251,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 4,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.1,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 9,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 358,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 19,
@@ -32209,7 +33235,64 @@
       ]
     ],
     "idString": "D20",
-    "neighborhoodID": 10
+    "neighborhoodID": 10,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 30,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.7,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 405,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 11,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.3,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 20,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 579,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 20,
@@ -32349,7 +33432,64 @@
       ]
     ],
     "idString": "D21",
-    "neighborhoodID": 10
+    "neighborhoodID": 10,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 31,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.6,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 405,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 10,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.2,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 20,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 579,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 21,
@@ -33781,7 +34921,64 @@
       ]
     ],
     "idString": "D22",
-    "neighborhoodID": 11
+    "neighborhoodID": 11,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 32,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.8,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 401,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 10,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.3,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 20,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 573,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 22,
@@ -34173,7 +35370,64 @@
       ]
     ],
     "idString": "D23",
-    "neighborhoodID": 11
+    "neighborhoodID": 11,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 20,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.9,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 244,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 3,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.1,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 8,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 349,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 23,
@@ -38505,7 +39759,64 @@
       ]
     ],
     "idString": "D24",
-    "neighborhoodID": 11
+    "neighborhoodID": 11,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 20,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.9,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 245,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 4,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.1,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 9,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 350,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 24,
@@ -39505,7 +40816,64 @@
       ]
     ],
     "idString": "D25",
-    "neighborhoodID": 12
+    "neighborhoodID": 12,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 47,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 605,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 19,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 36,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 864,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 25,
@@ -39789,7 +41157,64 @@
       ]
     ],
     "idString": "D26",
-    "neighborhoodID": 13
+    "neighborhoodID": 13,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 40,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.6,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 578,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 18,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 34,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 825,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 26,
@@ -40197,7 +41622,64 @@
       ]
     ],
     "idString": "D27",
-    "neighborhoodID": 13
+    "neighborhoodID": 13,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 42,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 605,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 19,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 35,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 864,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 27,
@@ -40489,7 +41971,64 @@
       ]
     ],
     "idString": "D28",
-    "neighborhoodID": 13
+    "neighborhoodID": 13,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 20,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.9,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 253,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 4,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.1,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 9,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 361,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 28,
@@ -40697,7 +42236,64 @@
       ]
     ],
     "idString": "D29",
-    "neighborhoodID": 14
+    "neighborhoodID": 14,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 20,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.8,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 248,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 4,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.1,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 9,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 354,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 29,
@@ -40953,7 +42549,64 @@
       ]
     ],
     "idString": "D30",
-    "neighborhoodID": 15
+    "neighborhoodID": 15,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 45,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.6,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 576,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 18,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 33,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 823,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 30,
@@ -41477,7 +43130,64 @@
       ]
     ],
     "idString": "D31",
-    "neighborhoodID": 16
+    "neighborhoodID": 16,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 46,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 585,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 18,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.3,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 34,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 835,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 31,
@@ -41917,7 +43627,64 @@
       ]
     ],
     "idString": "D32",
-    "neighborhoodID": 10
+    "neighborhoodID": 10,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 19,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.8,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 255,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 4,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.1,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 9,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 364,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 32,
@@ -42249,7 +44016,64 @@
       ]
     ],
     "idString": "D33",
-    "neighborhoodID": 17
+    "neighborhoodID": 17,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 47,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 585,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 18,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 36,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 836,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 33,
@@ -42865,7 +44689,64 @@
       ]
     ],
     "idString": "D34",
-    "neighborhoodID": 17
+    "neighborhoodID": 17,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 41,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 550,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 17,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.3,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 32,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 786,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 34,
@@ -43449,7 +45330,64 @@
       ]
     ],
     "idString": "D35",
-    "neighborhoodID": 18
+    "neighborhoodID": 18,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 65,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.1,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 986,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 10,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 163,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 1409,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 35,
@@ -43777,7 +45715,64 @@
       ]
     ],
     "idString": "D36",
-    "neighborhoodID": 19
+    "neighborhoodID": 19,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 46,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 607,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 21,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 35,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 867,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 36,
@@ -44053,7 +46048,64 @@
       ]
     ],
     "idString": "D37",
-    "neighborhoodID": 20
+    "neighborhoodID": 20,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 48,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 620,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 27,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 38,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 886,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 37,
@@ -44377,7 +46429,64 @@
       ]
     ],
     "idString": "D38",
-    "neighborhoodID": 21
+    "neighborhoodID": 21,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 49,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 605,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 19,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.3,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 36,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 864,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 38,
@@ -44437,7 +46546,64 @@
       ]
     ],
     "idString": "D39",
-    "neighborhoodID": 15
+    "neighborhoodID": 15,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 48,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.3,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 618,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 25,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 37,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 883,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 39,
@@ -45061,7 +47227,64 @@
       ]
     ],
     "idString": "D40",
-    "neighborhoodID": 22
+    "neighborhoodID": 22,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 48,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 617,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 25,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 37,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 882,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 40,
@@ -45345,11 +47568,68 @@
       ]
     ],
     "idString": "D41",
-    "neighborhoodID": 23
+    "neighborhoodID": 23,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 48,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 619,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 25,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 37,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 884,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 41,
-    "name": "Piazza del Gesù",
+    "name": "Piazza del Ges\u00f9",
     "vertices": [
       [
         40.8431615289022,
@@ -45469,7 +47749,64 @@
       ]
     ],
     "idString": "D42",
-    "neighborhoodID": 22
+    "neighborhoodID": 22,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 48,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.6,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 620,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 27,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.3,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 38,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 886,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 42,
@@ -48061,7 +50398,64 @@
       ]
     ],
     "idString": "D43",
-    "neighborhoodID": 24
+    "neighborhoodID": 24,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 47,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.3,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 615,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 25,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.6,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 36,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 879,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 43,
@@ -49233,7 +51627,64 @@
       ]
     ],
     "idString": "D44",
-    "neighborhoodID": 25
+    "neighborhoodID": 25,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 63,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.0,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 946,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 11,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 153,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 1352,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 44,
@@ -49905,7 +52356,64 @@
       ]
     ],
     "idString": "D45",
-    "neighborhoodID": 25
+    "neighborhoodID": 25,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 58,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 946,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 11,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 152,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 1351,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 45,
@@ -50397,7 +52905,64 @@
       ]
     ],
     "idString": "D46",
-    "neighborhoodID": 26
+    "neighborhoodID": 26,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 64,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.0,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 947,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 10,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.3,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 156,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 1353,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 46,
@@ -50933,7 +53498,64 @@
       ]
     ],
     "idString": "D47",
-    "neighborhoodID": 26
+    "neighborhoodID": 26,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 46,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.2,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 624,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 30,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 41,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 892,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 47,
@@ -51077,7 +53699,64 @@
       ]
     ],
     "idString": "D48",
-    "neighborhoodID": 15
+    "neighborhoodID": 15,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 48,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 611,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 22,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 37,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 873,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 48,
@@ -51137,7 +53816,64 @@
       ]
     ],
     "idString": "D49",
-    "neighborhoodID": 15
+    "neighborhoodID": 15,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 47,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 617,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 27,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 37,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 882,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 49,
@@ -51385,7 +54121,64 @@
       ]
     ],
     "idString": "D51",
-    "neighborhoodID": 27
+    "neighborhoodID": 27,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 47,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 617,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 25,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.4,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 36,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 882,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   },
   {
     "id": 50,
@@ -51629,6 +54422,63 @@
       ]
     ],
     "idString": "D52",
-    "neighborhoodID": 18
+    "neighborhoodID": 18,
+    "quality": [
+      {
+        "parameterID": 1,
+        "value": 47,
+        "isRange": false
+      },
+      {
+        "parameterID": 2,
+        "value": 7.3,
+        "isRange": false
+      },
+      {
+        "parameterID": 3,
+        "value": 617,
+        "isRange": false
+      },
+      {
+        "parameterID": 4,
+        "value": 25,
+        "isRange": false
+      },
+      {
+        "parameterID": 5,
+        "value": 0.13,
+        "isRange": true
+      },
+      {
+        "parameterID": 6,
+        "value": 0.03,
+        "isRange": true
+      },
+      {
+        "parameterID": 7,
+        "value": 0.5,
+        "isRange": false
+      },
+      {
+        "parameterID": 8,
+        "value": 36,
+        "isRange": false
+      },
+      {
+        "parameterID": 9,
+        "value": 881,
+        "isRange": false
+      },
+      {
+        "parameterID": 10,
+        "value": 0,
+        "isRange": false
+      },
+      {
+        "parameterID": 11,
+        "value": 0,
+        "isRange": false
+      }
+    ]
   }
 ]

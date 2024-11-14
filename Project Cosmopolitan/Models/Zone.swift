@@ -18,9 +18,10 @@ struct Zone: Decodable, Identifiable {
     let center: Coords
     let neighborhoodID: Int
     let neighborhood: String
+    let quality: [ZoneParameter]
     
     enum CodingKeys: String, CodingKey {
-        case id, idString, name, vertices, neighborhoodID
+        case id, idString, name, vertices, neighborhoodID, quality
     }
     
     init(from decoder: any Decoder) throws {
@@ -30,6 +31,7 @@ struct Zone: Decodable, Identifiable {
         idString = try container.decode(String.self, forKey: .idString)
         name = try container.decode(String.self, forKey: .name)
         neighborhoodID = try container.decode(Int.self, forKey: .neighborhoodID)
+        quality = try container.decode([ZoneParameter].self, forKey: .quality)
         
         let rawVertices = try container.decode([[Double]].self, forKey: .vertices)
         var vertices = [Coords]()
