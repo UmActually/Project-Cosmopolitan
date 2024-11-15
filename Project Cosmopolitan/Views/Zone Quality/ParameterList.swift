@@ -31,3 +31,10 @@ struct ParameterList: View {
         }
     }
 }
+
+
+#Preview {
+    var modelData = ModelData()
+    modelData.selectedZone = modelData.naplesZones[0]
+    return ParameterList().environmentObject(modelData)
+    }
