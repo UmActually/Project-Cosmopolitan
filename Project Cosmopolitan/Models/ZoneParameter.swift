@@ -15,4 +15,14 @@ struct ZoneParameter: Decodable {
     var parameter: Parameter {
         Parameter.parameters[parameterID - 1]
     }
+    
+    var info: ParameterInfo? {
+        let parameter = self.parameter
+        for item in parameter.info {
+            if item.range.contains(value) {
+                return item
+            }
+        }
+        return nil
+    }
 }

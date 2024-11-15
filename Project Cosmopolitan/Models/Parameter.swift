@@ -15,6 +15,7 @@ struct Parameter: Decodable, Identifiable {
     let maxSuggestedValue: Double?
     let unitOfMeasurement: String?
     let displaysAsChart: Bool
+    let info: [ParameterInfo]
     
     static let parameters: [Self] = decodeJSON(from: "Parameters")
 }

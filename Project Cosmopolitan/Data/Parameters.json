@@ -5,8 +5,36 @@
         "benchmarkValue": null,
         "minSuggestedValue": 13,
         "maxSuggestedValue": 38,
-        "unitOfMeasurement": null,
-        "displaysAsChart": true
+        "unitOfMeasurement": "°f",
+        "displaysAsChart": true,
+        "info": [
+            {
+                "isPositive": false,
+                "range": [null, 13],
+                "description": "Soft water, depending on the ions it cantains, can be corrosive to metal pipes.",
+                "reference": "https://qualitywaterlab.com/info/what-is-the-ideal-water-hardness-level/",
+                "tips": [
+                    "Periodically check for corrosion in your main metal pipes."
+                ]
+            },
+            {
+                "isPositive": true,
+                "range": [13, 38],
+                "description": "Water with a hardness between 13 and 38 °f is considered ideal for most uses.",
+                "reference": null,
+                "tips": null
+            },
+            {
+                "isPositive": false,
+                "range": [38, null],
+                "description": "Very hard water is not a health risk, but can cause scale deposits in pipes and dull laundry or dishes.",
+                "reference": "https://qualitywaterlab.com/info/what-is-the-ideal-water-hardness-level/",
+                "tips": [
+                    "Use a water softener to reduce the hardness of your water.",
+                    "Check for water pressure issues caused by scale deposits."
+                ]
+            }
+        ]
     },
     {
         "id": 2,
@@ -15,7 +43,34 @@
         "minSuggestedValue": 6.5,
         "maxSuggestedValue": 8.5,
         "unitOfMeasurement": null,
-        "displaysAsChart": true
+        "displaysAsChart": true,
+        "info": [
+            {
+                "isPositive": false,
+                "range": [null, 6.5],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            },
+            {
+                "isPositive": true,
+                "range": [6.5, 8.5],
+                "description": "Water with a pH between 6.5 and 8.5 is considered ideal for most uses.",
+                "reference": null,
+                "tips": null
+            },
+            {
+                "isPositive": false,
+                "range": [8.5, null],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 3,
@@ -24,7 +79,32 @@
         "minSuggestedValue": 100,
         "maxSuggestedValue": 500,
         "unitOfMeasurement": "mg/l",
-        "displaysAsChart": true
+        "displaysAsChart": true,
+        "info": [
+            {
+                "isPositive": false,
+                "range": [null, 100],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": "https://www.bartmaes.eu/en/water/is-water-with-a-very-low-dry-residue-dead-water/",
+                "tips": null
+            },
+            {
+                "isPositive": true,
+                "range": [100, 500],
+                "description": "Water with a dry residue between 100 and 500 mg/l is considered ideal for most uses.",
+                "reference": null,
+                "tips": null
+            },
+            {
+                "isPositive": false,
+                "range": [500, null],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 4,
@@ -33,16 +113,52 @@
         "minSuggestedValue": 0,
         "maxSuggestedValue": 50,
         "unitOfMeasurement": "mg/l",
-        "displaysAsChart": true
+        "displaysAsChart": true,
+        "info": [
+            {
+                "isPositive": true,
+                "range": [null, 50],
+                "description": "Water with a nitrate concentration between 0 and 50 mg/l is considered ideal for most uses.",
+                "reference": null,
+                "tips": null
+            },
+            {
+                "isPositive": false,
+                "range": [50, null],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 5,
         "name": "Nitrite (NO₂)",
-        "benchmarkValue": 50,
+        "benchmarkValue": 0.5,
         "minSuggestedValue": 0,
         "maxSuggestedValue": 0.5,
         "unitOfMeasurement": "mg/l",
-        "displaysAsChart": true
+        "displaysAsChart": true,
+        "info": [
+            {
+                "isPositive": true,
+                "range": [null, 0.5],
+                "description": "Water with a nitrite concentration between 0 and 0.5 mg/l is considered ideal for most uses.",
+                "reference": null,
+                "tips": null
+            },
+            {
+                "isPositive": false,
+                "range": [0.5, null],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 6,
@@ -51,7 +167,25 @@
         "minSuggestedValue": 0,
         "maxSuggestedValue": 0.5,
         "unitOfMeasurement": "mg/l",
-        "displaysAsChart": true
+        "displaysAsChart": true,
+        "info": [
+            {
+                "isPositive": true,
+                "range": [null, 0.5],
+                "description": "Water with an ammonium concentration between 0 and 0.5 mg/l is considered ideal for most uses.",
+                "reference": null,
+                "tips": null
+            },
+            {
+                "isPositive": false,
+                "range": [0.5, null],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 7,
@@ -60,7 +194,25 @@
         "minSuggestedValue": 0,
         "maxSuggestedValue": 1.5,
         "unitOfMeasurement": "mg/l",
-        "displaysAsChart": true
+        "displaysAsChart": true,
+        "info": [
+            {
+                "isPositive": true,
+                "range": [null, 1.5],
+                "description": "Water with a fluoride concentration between 0 and 1.5 mg/l is considered ideal for most uses.",
+                "reference": null,
+                "tips": null
+            },
+            {
+                "isPositive": false,
+                "range": [1.5, null],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 8,
@@ -69,7 +221,25 @@
         "minSuggestedValue": 0,
         "maxSuggestedValue": 250,
         "unitOfMeasurement": "mg/l",
-        "displaysAsChart": true
+        "displaysAsChart": true,
+        "info": [
+            {
+                "isPositive": true,
+                "range": [null, 250],
+                "description": "Water with a chloride concentration between 0 and 250 mg/l is considered ideal for most uses.",
+                "reference": null,
+                "tips": null
+            },
+            {
+                "isPositive": false,
+                "range": [250, null],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 9,
@@ -78,7 +248,25 @@
         "minSuggestedValue": 0,
         "maxSuggestedValue": 2500,
         "unitOfMeasurement": "µS/cm",
-        "displaysAsChart": true
+        "displaysAsChart": true,
+        "info": [
+            {
+                "isPositive": true,
+                "range": [null, 2500],
+                "description": "Water with a conductivity between 0 and 2500 µS/cm is considered ideal for most uses.",
+                "reference": null,
+                "tips": null
+            },
+            {
+                "isPositive": false,
+                "range": [2500, null],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 10,
@@ -87,7 +275,27 @@
         "minSuggestedValue": null,
         "maxSuggestedValue": null,
         "unitOfMeasurement": "u.f.c./100 ml",
-        "displaysAsChart": false
+        "displaysAsChart": false,
+        "info": [
+            {
+                "isPositive": true,
+                "range": [null, 0.1],
+                "description": "Coliform bacteria concentration is within acceptable limits.",
+                "reference": null,
+                "tips": [
+                    "In any case, if the water will be used for drinking, consider installing a purifier."
+                ]
+            },
+            {
+                "isPositive": false,
+                "range": [0.1, null],
+                "description": "Coliform bacteria concentration is too high.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 11,
@@ -96,6 +304,26 @@
         "minSuggestedValue": null,
         "maxSuggestedValue": null,
         "unitOfMeasurement": "u.f.c./100 ml",
-        "displaysAsChart": false
+        "displaysAsChart": false,
+        "info": [
+            {
+                "isPositive": true,
+                "range": [null, 0.1],
+                "description": "E. Coli concentration is within acceptable limits.",
+                "reference": null,
+                "tips": [
+                    "In any case, if the water will be used for drinking, consider installing a purifier."
+                ]
+            },
+            {
+                "isPositive": false,
+                "range": [0.1, null],
+                "description": "E. Coli bacteria concentration is too high.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     }
 ]
