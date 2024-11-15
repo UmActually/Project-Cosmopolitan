@@ -31,3 +31,12 @@ struct ParameterList: View {
         }
     }
 }
+
+#Preview {
+    let modelData = ModelData()
+    modelData.selectedZone = modelData.naplesZones.first!
+    return NavigationStack {
+        ZoneDetail()
+            .environmentObject(modelData)
+    }
+}

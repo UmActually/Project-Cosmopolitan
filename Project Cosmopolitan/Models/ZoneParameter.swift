@@ -16,13 +16,16 @@ struct ZoneParameter: Decodable {
         Parameter.parameters[parameterID - 1]
     }
     
-    var info: ParameterInfo? {
-        let parameter = self.parameter
-        for item in parameter.info {
-            if item.range.contains(value) {
-                return item
-            }
+    var isWithinRange: Bool {
+        guard let min = parameter.lowerBound, let max = parameter.upperBound else {
+            return true // Default to true if no range is defined
         }
-        return nil
+        return value >= min && value < max
+    }
+    
+    var currentValueInfo: [ParameterInfo] {
+        return parameter.info.filter { item in
+            item.range.contains(value)
+        }
     }
 }

@@ -25,8 +25,8 @@ struct TextParameterView: View {
                     }
                 }
                 
-                if let min = zoneParam.parameter.minSuggestedValue, let max = zoneParam.parameter.maxSuggestedValue {
-                    Text("Suggested Values: \(String(format: "%.2f", min)) to \(String(format: "%.2f", max))")
+                if let lower = zoneParam.parameter.lowerBound, let upper = zoneParam.parameter.upperBound {
+                    Text("Suggested Values: \(String(format: "%.2f", lower)) to \(String(format: "%.2f", upper))")
                 }
             }
             .font(.subheadline)

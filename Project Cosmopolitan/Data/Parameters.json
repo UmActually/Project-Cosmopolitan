@@ -2,9 +2,7 @@
     {
         "id": 1,
         "name": "Hardness",
-        "benchmarkValue": null,
-        "minSuggestedValue": 13,
-        "maxSuggestedValue": 38,
+        "idealRange": [13, 38],
         "unitOfMeasurement": "°f",
         "displaysAsChart": true,
         "info": [
@@ -39,9 +37,7 @@
     {
         "id": 2,
         "name": "pH",
-        "benchmarkValue": null,
-        "minSuggestedValue": 6.5,
-        "maxSuggestedValue": 8.5,
+        "idealRange": [6.5, 8.5],
         "unitOfMeasurement": null,
         "displaysAsChart": true,
         "info": [
@@ -75,9 +71,7 @@
     {
         "id": 3,
         "name": "Dry residue",
-        "benchmarkValue": null,
-        "minSuggestedValue": 100,
-        "maxSuggestedValue": 500,
+        "idealRange": [100, 500],
         "unitOfMeasurement": "mg/l",
         "displaysAsChart": true,
         "info": [
@@ -109,9 +103,7 @@
     {
         "id": 4,
         "name": "Nitrate (NO₃)",
-        "benchmarkValue": 50,
-        "minSuggestedValue": 0,
-        "maxSuggestedValue": 50,
+        "idealRange": [null, 50],
         "unitOfMeasurement": "mg/l",
         "displaysAsChart": true,
         "info": [
@@ -136,9 +128,7 @@
     {
         "id": 5,
         "name": "Nitrite (NO₂)",
-        "benchmarkValue": 0.5,
-        "minSuggestedValue": 0,
-        "maxSuggestedValue": 0.5,
+        "idealRange": [null, 0.5],
         "unitOfMeasurement": "mg/l",
         "displaysAsChart": true,
         "info": [
@@ -163,9 +153,7 @@
     {
         "id": 6,
         "name": "Ammonium",
-        "benchmarkValue": 0.5,
-        "minSuggestedValue": 0,
-        "maxSuggestedValue": 0.5,
+        "idealRange": [null, 0.5],
         "unitOfMeasurement": "mg/l",
         "displaysAsChart": true,
         "info": [
@@ -190,9 +178,7 @@
     {
         "id": 7,
         "name": "Fluoride",
-        "benchmarkValue": 1.5,
-        "minSuggestedValue": 0,
-        "maxSuggestedValue": 1.5,
+        "idealRange": [null, 1.5],
         "unitOfMeasurement": "mg/l",
         "displaysAsChart": true,
         "info": [
@@ -217,9 +203,7 @@
     {
         "id": 8,
         "name": "Chloride",
-        "benchmarkValue": 250,
-        "minSuggestedValue": 0,
-        "maxSuggestedValue": 250,
+        "idealRange": [null, 250],
         "unitOfMeasurement": "mg/l",
         "displaysAsChart": true,
         "info": [
@@ -244,9 +228,7 @@
     {
         "id": 9,
         "name": "Conductivity",
-        "benchmarkValue": 2500,
-        "minSuggestedValue": 0,
-        "maxSuggestedValue": 2500,
+        "idealRange": [null, 2500],
         "unitOfMeasurement": "µS/cm",
         "displaysAsChart": true,
         "info": [
@@ -271,9 +253,7 @@
     {
         "id": 10,
         "name": "Coliform bacteria",
-        "benchmarkValue": null,
-        "minSuggestedValue": null,
-        "maxSuggestedValue": null,
+        "idealRange": [null, null],
         "unitOfMeasurement": "u.f.c./100 ml",
         "displaysAsChart": false,
         "info": [
@@ -300,9 +280,7 @@
     {
         "id": 11,
         "name": "Escherichia coli",
-        "benchmarkValue": null,
-        "minSuggestedValue": null,
-        "maxSuggestedValue": null,
+        "idealRange": [null, null],
         "unitOfMeasurement": "u.f.c./100 ml",
         "displaysAsChart": false,
         "info": [
