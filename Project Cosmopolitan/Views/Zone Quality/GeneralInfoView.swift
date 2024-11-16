@@ -27,10 +27,11 @@ struct GeneralInfoView: View {
                     HStack {
                         Text(item.title)
                             .font(.headline)
-                            .foregroundStyle(.accent)
+                            .foregroundStyle(.customBlue)
                         Spacer()
                         Image(systemName: item.isExpanded ? "chevron.down" : "chevron.right")
                             .frame(width: 20, height: 20)
+                            .foregroundStyle(.customBlue)
                     }
                 }
             }

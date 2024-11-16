@@ -13,6 +13,7 @@ struct GraphParameterView: View {
     
     @State var showGeneralInfo = false
     @State private var expandedDescriptions: [String: Bool] = [:]
+    @State private var animatedValue: Double = 0
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -23,7 +24,7 @@ struct GraphParameterView: View {
                     .foregroundColor(.primary)
                 
                 // Info button to general info view
-                Image(systemName: "info.circle")
+                Image(systemName: "info.circle.fill")
                     .onTapGesture {
                         showGeneralInfo = true
                     }
@@ -44,7 +45,7 @@ struct GraphParameterView: View {
             
             Chart {
                 BarMark(
-                    x: .value("Parameter", zoneParam.value)
+                    x: .value("Parameter", animatedValue)
                 )
                 .foregroundStyle(zoneParam.isWithinRange ? .lightGreen : .rustyRed) // Adjust color based on range
                 
@@ -102,6 +103,11 @@ struct GraphParameterView: View {
             }
             .frame(height: 50)
             .chartXAxis { AxisMarks() { _ in } }
+            .onAppear {
+                withAnimation(.easeInOut(duration: 1.0)) {
+                    animatedValue = zoneParam.value
+                }
+            }
             
             // Display warning or success message based on the range
             Spacer()
