@@ -9,14 +9,22 @@ import SwiftUI
 import Charts
 
 struct TextParameterView: View {
+    
     let zoneParam: ZoneParameter
+    
+    @State var showGeneralInfo = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text(zoneParam.parameter.name)
-                .font(.headline)
-                .foregroundColor(Color.blue)
-            
+            HStack {Text(zoneParam.parameter.name)
+                    .font(.headline)
+                // Info button to general info view
+                Image(systemName: "info.circle.fill")
+                    .onTapGesture {
+                        showGeneralInfo = true
+                    }
+                    .foregroundColor(.customBlue)
+            }
             VStack(alignment: .leading) {
                 HStack {
                     Text("Detected Value: \(String(format: "%.2f", zoneParam.value))")

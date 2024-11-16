@@ -2,44 +2,50 @@
 //  General_info.swift
 //  Project Cosmopolitan
 //
-//  Created by Lehebel Florence on 11/11/24.
+//  Created by Luca Langella on 16/11/24.
 //
 
 import SwiftUI
 
 struct GeneralInfoView: View {
     @ObservedObject var generalInfoModel = GeneralInfoModel()
+    var selectedParameter: String
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        List($generalInfoModel.generalInfo) { $item in
-            Section {
-                if item.isExpanded {
-                    Text(item.detailText)
-                        .font(.subheadline)
-                        .frame(maxWidth: .infinity)
-                }
-            } header: {
-                Button {
-                    withAnimation {
-                        item.isExpanded.toggle()
-                    }
-                } label: {
-                    HStack {
+        NavigationView {
+            List($generalInfoModel.generalInfo) { $item in
+                if item.title == selectedParameter {
+                    Section {
+                        Text(item.detailText)
+                            .font(.subheadline)
+                            .frame(maxWidth: .infinity)
+                    } header: {
                         Text(item.title)
                             .font(.headline)
-                            .foregroundStyle(.customBlue)
-                        Spacer()
-                        Image(systemName: item.isExpanded ? "chevron.down" : "chevron.right")
-                            .frame(width: 20, height: 20)
                             .foregroundStyle(.customBlue)
                     }
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                            ToolbarItem(placement: .navigationBarTrailing) {
+                                Button(action: {
+                                    dismiss()
+                                }) {
+                                    Image(systemName: "xmark.circle.fill") // This line is already correct
+                                        .font(.title3)
+                                        .foregroundColor(.gray)
+                                        .padding(6)
+                                }
+                                .buttonStyle(PlainButtonStyle())
+                            }
+                        }
         }
-        .navigationTitle("General Information")
     }
 }
 
+
 #Preview {
-    GeneralInfoView()
+    GeneralInfoView(selectedParameter: "pH")
 }

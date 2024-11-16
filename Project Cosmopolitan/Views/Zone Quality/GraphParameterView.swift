@@ -29,12 +29,12 @@ struct GraphParameterView: View {
                         showGeneralInfo = true
                     }
                     .foregroundColor(.customBlue)
-
+                
                 Spacer()
                 Text(String(format: "%.2f", zoneParam.value))
                     .font(.title2)
                     .foregroundColor(.secondary)
-                    
+                
                 if let unit = zoneParam.parameter.unitOfMeasurement {
                     Text(unit)
                         .font(.subheadline)
@@ -140,8 +140,8 @@ struct GraphParameterView: View {
         }
         .padding(.vertical, 8)
         .padding(.horizontal, 16)
-        .navigationDestination(isPresented: $showGeneralInfo) {
-            GeneralInfoView()
+        .sheet(isPresented: $showGeneralInfo) {
+            GeneralInfoView(selectedParameter: zoneParam.parameter.name)
         }
     }
 }
