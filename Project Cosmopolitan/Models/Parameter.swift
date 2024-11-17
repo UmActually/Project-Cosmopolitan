@@ -29,9 +29,7 @@ struct Parameter: Decodable, Identifiable {
         lowerBound = idealRange[0]
         upperBound = idealRange[1]
         let domainRange = try container.decode([Double].self, forKey: .domainRange)
-        print(domainRange)
         domain = domainRange[0]...domainRange[1]
-        print(domain)
         unitOfMeasurement = try container.decode(String?.self, forKey: .unitOfMeasurement)
         displaysAsChart = try container.decode(Bool.self, forKey: .displaysAsChart)
         info = try container.decode([ParameterInfo].self, forKey: .info)
