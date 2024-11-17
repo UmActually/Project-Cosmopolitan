@@ -15,7 +15,7 @@ struct Parameter: Decodable, Identifiable {
     let domain: ClosedRange<Double>
     let unitOfMeasurement: String?
     let displaysAsChart: Bool
-    let info: [ParameterInfo]
+    var info: [ParameterInfo]
     
     enum CodingKeys: String, CodingKey {
         case id, name, idealRange, domainRange, unitOfMeasurement, displaysAsChart, info
@@ -33,6 +33,9 @@ struct Parameter: Decodable, Identifiable {
         unitOfMeasurement = try container.decode(String?.self, forKey: .unitOfMeasurement)
         displaysAsChart = try container.decode(Bool.self, forKey: .displaysAsChart)
         info = try container.decode([ParameterInfo].self, forKey: .info)
+        for index in 0..<info.count {
+            info[index].id = id * 10 + info[index].id
+        }
     }
     
     static let parameters: [Self] = decodeJSON(from: "Parameters")

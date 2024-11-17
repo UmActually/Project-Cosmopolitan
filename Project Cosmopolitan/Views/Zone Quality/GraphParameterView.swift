@@ -18,6 +18,7 @@ let numberFormatter: NumberFormatter = {
 struct GraphParameterView: View {
     let zoneParam: ZoneParameter
     
+    @EnvironmentObject var modelData: ModelData
     @State private var animatedValue: Double = 0
     
     var body: some View {
@@ -31,7 +32,7 @@ struct GraphParameterView: View {
                 // Info button to general info view
                 Image(systemName: "info.circle")
                     .onTapGesture {
-                        // TODO: Navigate
+                        modelData.selectedParameterID = zoneParam.parameter.id
                     }
                     .foregroundStyle(.customBlue)
 
@@ -67,11 +68,15 @@ struct GraphParameterView: View {
             .chartXScale(domain: zoneParam.parameter.domain)
             .chartXAxis {
                 let domain = zoneParam.parameter.domain
+                let upper = domain.upperBound
+                let lower = domain.lowerBound
                 
                 // MEXICANADA GRANDÍSIMA, SI SE PUEDE CAMBIAR DESPUÉS
-                let almostUpperBound = domain.upperBound - (domain.upperBound - domain.lowerBound) * 0.08
-                AxisMarks(values: [domain.lowerBound, almostUpperBound]) { value in
-                    AxisValueLabel(numberFormatter.string(from: (value.index == 0 ? domain.lowerBound : domain.upperBound) as NSNumber)!)
+                let almostUpper = upper - (upper - lower) * 0.08
+                AxisMarks(values: [lower, almostUpper]) { value in
+                    AxisValueLabel(numberFormatter.string(
+                        from: (value.index == 0 ? lower : upper) as NSNumber
+                    )!)
                 }
             }
             .frame(height: 40)
@@ -82,7 +87,7 @@ struct GraphParameterView: View {
             }
             
             VStack {
-                ForEach(zoneParam.currentValueInfo, id: \.range) { info in
+                ForEach(zoneParam.currentValueInfo) { info in
                     ParameterInfoView(info: info)
                 }
             }

@@ -13,7 +13,7 @@ struct ZoneListCard: View {
     var body: some View {
         VStack {
             Text(zone.name)
-                .foregroundStyle(.black)
+                .foregroundStyle(.textDefault)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Text(zone.neighborhood)
                 .font(.subheadline)

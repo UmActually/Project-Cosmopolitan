@@ -67,8 +67,8 @@ struct ZonesMapView: UIViewRepresentable {
         func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
             if let polygonOverlay = overlay as? MKPolygon {
                 let renderer = MKPolygonRenderer(polygon: polygonOverlay)
-                renderer.fillColor = UIColor.accent.withAlphaComponent(0.3)
-                renderer.strokeColor = UIColor.accent
+                renderer.fillColor = UIColor.customBlue.withAlphaComponent(0.1)
+                renderer.strokeColor = UIColor.customBlue
                 renderer.lineWidth = 2
                 return renderer
             }

@@ -10,11 +10,15 @@ import SwiftUI
 struct ParameterInfoView: View {
     let info: ParameterInfo
     
-    @State private var isExpanded = false
+    @EnvironmentObject var modelData: ModelData
+    
+    var isExpanded: Bool {
+        modelData.expandedParameterInfoID == info.id
+    }
     
     var textColor: Color {
         if isExpanded {
-            return .black
+            return .textDefault
         }
         return info.isPositive ? .darkGreen : .darkWarningYellow
     }
@@ -32,42 +36,50 @@ struct ParameterInfoView: View {
     }
     
     var body: some View {
-        HStack(alignment: .top, spacing: 8) {
-            Image(systemName: iconName)
-                .foregroundStyle(strokeColor)
-                .contentTransition(.symbolEffect(.replace))
-            
-            VStack(alignment: .leading, spacing: 10) {
-                Text(info.description)
-                    .lineLimit(isExpanded ? nil : 1)
-                    .foregroundStyle(textColor)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .animation(nil, value: isExpanded)
+        VStack(spacing: 10) {
+            HStack(alignment: .top, spacing: 8) {
+                Image(systemName: iconName)
+                    .foregroundStyle(strokeColor)
+                    .contentTransition(.symbolEffect(.replace))
                 
-                if isExpanded, let tips = info.tips, !tips.isEmpty {
-                    VStack(alignment: .leading, spacing: 6) {
-                        Text("Suggestions")
-                            .bold()
-                            .font(.subheadline.smallCaps())
-                            .foregroundStyle(.customBlue)
-                        
-                        ForEach(tips, id: \.self) { tip in
-                            Text(tip)
-                                .font(.caption2)
+                VStack(alignment: .leading, spacing: 10) {
+                    Text(info.description)
+                        .lineLimit(isExpanded ? nil : 1)
+                        .foregroundStyle(textColor)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    
+                    if isExpanded, let tips = info.tips, !tips.isEmpty {
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text("Suggestions")
+                                .bold()
+                                .font(.subheadline.smallCaps())
+                                .foregroundStyle(.customBlue)
+                            
+                            ForEach(tips, id: \.self) { tip in
+                                Text(tip)
+                                    .font(.caption2)
+                            }
                         }
                     }
                 }
-                
-                HStack {
-                    Spacer()
-                    Text("see \(isExpanded ? "less" : "more")")
-                        .font(.caption2)
-                        .foregroundStyle(.customBlue)
+                .fixedSize(horizontal: false, vertical: true)
+            }
+            HStack {
+                if isExpanded, let reference = info.reference {
+                    let url = URL(string: reference)!
+                    SmallLabel(text: "learn more", systemImage: "link")
+                        .onTapGesture {
+                            UIApplication.shared.open(url)
+                        }
                 }
+                Spacer()
+                SmallLabel(text: "see \(isExpanded ? "less" : "more")", systemImage: "chevron.\(isExpanded ? "up" : "down")")
+                    .contentTransition(.symbolEffect(.replace))
+                    .onTapGesture {
+                        modelData.expandedParameterInfoID = isExpanded ? nil : info.id
+                    }
             }
         }
-    
-        .contentShape(Rectangle())
         .padding()
         .background(
             ZStack {
@@ -79,9 +91,21 @@ struct ParameterInfoView: View {
             }
         )
         .onTapGesture {
-            withAnimation(.spring(duration: 0.5)) {
-                isExpanded.toggle()
-            }
+            modelData.expandedParameterInfoID = isExpanded ? nil : info.id
         }
+    }
+}
+
+struct SmallLabel: View {
+    let text: String
+    let systemImage: String
+    
+    var body: some View {
+        HStack {
+            Image(systemName: systemImage)
+            Text(text)
+        }
+        .font(.caption2)
+        .foregroundColor(.customBlue)
     }
 }

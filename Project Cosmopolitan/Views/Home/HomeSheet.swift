@@ -10,7 +10,7 @@ import MapKit
 
 struct HomeSheet: View {
     @EnvironmentObject var modelData: ModelData
-    @ObservedObject var userLocationModel = UserLocationModel()
+    @EnvironmentObject var userLocationModel: UserLocationModel
     @State private var search = ""
     
     var userCurrentZone: Zone? {
@@ -54,7 +54,7 @@ struct HomeSheet: View {
             }
             .id(modelData.manuallyReloadViews)
             .searchable(text: $search, prompt: "Search for a zone")
-            .navigationTitle("Zones of Naples")
+            .navigationTitle("Select a zone")
             .navigationBarTitleDisplayMode(.inline)
         }
     }

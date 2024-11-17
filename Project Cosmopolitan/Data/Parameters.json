@@ -8,6 +8,7 @@
         "displaysAsChart": true,
         "info": [
             {
+                "id": 1,
                 "isPositive": false,
                 "range": [null, 13],
                 "description": "Soft water, depending on the ions it cantains, can be corrosive to metal pipes.",
@@ -17,13 +18,7 @@
                 ]
             },
             {
-                "isPositive": true,
-                "range": [30, null],
-                "description": "Hard water can contain important minerals such as calcium and magnesium.",
-                "reference": "https://qualitywaterlab.com/info/what-is-the-ideal-water-hardness-level/",
-                "tips": null
-            },
-            {
+                "id": 3,
                 "isPositive": false,
                 "range": [38, null],
                 "description": "Although hard water is not a health risk, it causes scale deposits in pipes and dull laundry or dishes.",
@@ -44,6 +39,7 @@
         "displaysAsChart": true,
         "info": [
             {
+                "id": 1,
                 "isPositive": false,
                 "range": [null, 6.5],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -53,6 +49,7 @@
                 ]
             },
             {
+                "id": 2,
                 "isPositive": false,
                 "range": [8.5, null],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -72,6 +69,7 @@
         "displaysAsChart": true,
         "info": [
             {
+                "id": 1,
                 "isPositive": false,
                 "range": [null, 100],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -79,6 +77,7 @@
                 "tips": null
             },
             {
+                "id": 2,
                 "isPositive": false,
                 "range": [500, null],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -98,6 +97,7 @@
         "displaysAsChart": true,
         "info": [
             {
+                "id": 1,
                 "isPositive": false,
                 "range": [50, null],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -117,6 +117,7 @@
         "displaysAsChart": true,
         "info": [
             {
+                "id": 1,
                 "isPositive": false,
                 "range": [0.5, null],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -136,6 +137,7 @@
         "displaysAsChart": true,
         "info": [
             {
+                "id": 1,
                 "isPositive": false,
                 "range": [0.5, null],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -155,6 +157,7 @@
         "displaysAsChart": true,
         "info": [
             {
+                "id": 1,
                 "isPositive": false,
                 "range": [1.5, null],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -174,6 +177,7 @@
         "displaysAsChart": true,
         "info": [
             {
+                "id": 1,
                 "isPositive": true,
                 "range": [null, 250],
                 "description": "Example of positive information.",
@@ -181,6 +185,7 @@
                 "tips": null
             },
             {
+                "id": 2,
                 "isPositive": false,
                 "range": [250, null],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -200,6 +205,7 @@
         "displaysAsChart": true,
         "info": [
             {
+                "id": 1,
                 "isPositive": false,
                 "range": [2500, null],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -219,6 +225,7 @@
         "displaysAsChart": false,
         "info": [
             {
+                "id": 1,
                 "isPositive": true,
                 "range": [null, 0.1],
                 "description": "Ideal",
@@ -228,6 +235,7 @@
                 ]
             },
             {
+                "id": 2,
                 "isPositive": false,
                 "range": [0.1, null],
                 "description": "Coliform bacteria concentration is too high.",
@@ -247,6 +255,7 @@
         "displaysAsChart": false,
         "info": [
             {
+                "id": 1,
                 "isPositive": true,
                 "range": [null, 0.1],
                 "description": "Ideal",
@@ -256,6 +265,7 @@
                 ]
             },
             {
+                "id": 2,
                 "isPositive": false,
                 "range": [0.1, null],
                 "description": "E. Coli bacteria concentration is too high.",
