@@ -18,6 +18,8 @@ let numberFormatter: NumberFormatter = {
 struct GraphParameterView: View {
     let zoneParam: ZoneParameter
     
+    @State private var animatedValue: Double = 0
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 28) {
             HStack(alignment: .firstTextBaseline) {
@@ -49,7 +51,7 @@ struct GraphParameterView: View {
             
             Chart {
                 BarMark(
-                    x: .value("Parameter", zoneParam.value)
+                    x: .value("Parameter", animatedValue)
                 )
                 .foregroundStyle(zoneParam.isWithinRange ? .lightGreen : .rustyRed) // Adjust color based on range
                 
@@ -73,6 +75,11 @@ struct GraphParameterView: View {
                 }
             }
             .frame(height: 40)
+            .onAppear {
+                withAnimation(.spring(duration: 0.6)) {
+                    animatedValue = zoneParam.value
+                }
+            }
             
             VStack {
                 ForEach(zoneParam.currentValueInfo, id: \.range) { info in
