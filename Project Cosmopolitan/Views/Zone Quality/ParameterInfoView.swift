@@ -16,11 +16,11 @@ struct ParameterInfoView: View {
         if isExpanded {
             return .black
         }
-        return info.isPositive ? .darkGreen : .darkRustyRed
+        return info.isPositive ? .darkGreen : .darkWarningYellow
     }
     
     var strokeColor: Color {
-        info.isPositive ? .lightGreen : .rustyRed
+        info.isPositive ? .lightGreen : .warningYellow
     }
     
     var iconName: String {
@@ -72,10 +72,10 @@ struct ParameterInfoView: View {
         .background(
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
-//                    .foregroundStyle(isExpanded ? .clear : strokeColor.opacity(0.05))
+                    .foregroundStyle(isExpanded ? .clear : strokeColor.opacity(0.05))
                     .foregroundStyle(strokeColor.opacity(0.05))
                 RoundedRectangle(cornerRadius: 10)
-                    .stroke(strokeColor.opacity(0.2), lineWidth: 2)
+                    .stroke(strokeColor, lineWidth: 1)
             }
         )
         .onTapGesture {

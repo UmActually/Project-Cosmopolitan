@@ -12,12 +12,13 @@ struct Parameter: Decodable, Identifiable {
     let name: String
     let lowerBound: Double?
     let upperBound: Double?
+    let domain: ClosedRange<Double>
     let unitOfMeasurement: String?
     let displaysAsChart: Bool
     let info: [ParameterInfo]
     
     enum CodingKeys: String, CodingKey {
-        case id, name, idealRange, unitOfMeasurement, displaysAsChart, info
+        case id, name, idealRange, domainRange, unitOfMeasurement, displaysAsChart, info
     }
     
     init(from decoder: Decoder) throws {
@@ -27,6 +28,10 @@ struct Parameter: Decodable, Identifiable {
         let idealRange = try container.decode([Double?].self, forKey: .idealRange)
         lowerBound = idealRange[0]
         upperBound = idealRange[1]
+        let domainRange = try container.decode([Double].self, forKey: .domainRange)
+        print(domainRange)
+        domain = domainRange[0]...domainRange[1]
+        print(domain)
         unitOfMeasurement = try container.decode(String?.self, forKey: .unitOfMeasurement)
         displaysAsChart = try container.decode(Bool.self, forKey: .displaysAsChart)
         info = try container.decode([ParameterInfo].self, forKey: .info)

@@ -8,6 +8,13 @@
 import SwiftUI
 import Charts
 
+let numberFormatter: NumberFormatter = {
+    let formatter = NumberFormatter()
+    formatter.numberStyle = .decimal
+    formatter.maximumFractionDigits = 0
+    return formatter
+}()
+
 struct GraphParameterView: View {
     let zoneParam: ZoneParameter
     
@@ -28,6 +35,7 @@ struct GraphParameterView: View {
 
                 Spacer()
                 Text(String(format: "%.2f", zoneParam.value))
+                    .fontDesign(.monospaced)
                     .font(.title2)
                     .fontWeight(.medium)
                     .foregroundStyle(.secondary)
@@ -54,11 +62,24 @@ struct GraphParameterView: View {
                     ParameterRuleMark(value: upper, label: "Max")
                 }
             }
+            .chartXScale(domain: zoneParam.parameter.domain)
+            .chartXAxis {
+                let domain = zoneParam.parameter.domain
+                
+                // MEXICANADA GRANDÍSIMA, SI SE PUEDE CAMBIAR DESPUÉS
+                let almostUpperBound = domain.upperBound - (domain.upperBound - domain.lowerBound) * 0.08
+                AxisMarks(values: [domain.lowerBound, almostUpperBound]) { value in
+                    AxisValueLabel(numberFormatter.string(from: (value.index == 0 ? domain.lowerBound : domain.upperBound) as NSNumber)!)
+                }
+            }
             .frame(height: 40)
             
-            ForEach(zoneParam.currentValueInfo, id: \.range) { info in
-                ParameterInfoView(info: info)
+            VStack {
+                ForEach(zoneParam.currentValueInfo, id: \.range) { info in
+                    ParameterInfoView(info: info)
+                }
             }
+            .padding(.bottom, 8)
         }
     }
 }

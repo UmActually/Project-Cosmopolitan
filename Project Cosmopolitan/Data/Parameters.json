@@ -3,6 +3,7 @@
         "id": 1,
         "name": "Hardness",
         "idealRange": [13, 38],
+        "domainRange": [0, 60],
         "unitOfMeasurement": "°f",
         "displaysAsChart": true,
         "info": [
@@ -17,15 +18,15 @@
             },
             {
                 "isPositive": true,
-                "range": [13, 38],
-                "description": "Water with a hardness between 13 and 38 °f is considered ideal for most uses.",
-                "reference": null,
+                "range": [30, null],
+                "description": "Hard water can contain important minerals such as calcium and magnesium.",
+                "reference": "https://qualitywaterlab.com/info/what-is-the-ideal-water-hardness-level/",
                 "tips": null
             },
             {
                 "isPositive": false,
                 "range": [38, null],
-                "description": "Very hard water is not a health risk, but can cause scale deposits in pipes and dull laundry or dishes.",
+                "description": "Although hard water is not a health risk, it causes scale deposits in pipes and dull laundry or dishes.",
                 "reference": "https://qualitywaterlab.com/info/what-is-the-ideal-water-hardness-level/",
                 "tips": [
                     "Use a water softener to reduce the hardness of your water.",
@@ -38,6 +39,7 @@
         "id": 2,
         "name": "pH",
         "idealRange": [6.5, 8.5],
+        "domainRange": [0, 14],
         "unitOfMeasurement": null,
         "displaysAsChart": true,
         "info": [
@@ -49,13 +51,6 @@
                 "tips": [
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                 ]
-            },
-            {
-                "isPositive": true,
-                "range": [6.5, 8.5],
-                "description": "Water with a pH between 6.5 and 8.5 is considered ideal for most uses.",
-                "reference": null,
-                "tips": null
             },
             {
                 "isPositive": false,
@@ -72,6 +67,7 @@
         "id": 3,
         "name": "Dry residue",
         "idealRange": [100, 500],
+        "domainRange": [0, 1000],
         "unitOfMeasurement": "mg/l",
         "displaysAsChart": true,
         "info": [
@@ -80,13 +76,6 @@
                 "range": [null, 100],
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 "reference": "https://www.bartmaes.eu/en/water/is-water-with-a-very-low-dry-residue-dead-water/",
-                "tips": null
-            },
-            {
-                "isPositive": true,
-                "range": [100, 500],
-                "description": "Water with a dry residue between 100 and 500 mg/l is considered ideal for most uses.",
-                "reference": null,
                 "tips": null
             },
             {
@@ -104,16 +93,10 @@
         "id": 4,
         "name": "Nitrate (NO₃)",
         "idealRange": [null, 50],
+        "domainRange": [0, 100],
         "unitOfMeasurement": "mg/l",
         "displaysAsChart": true,
         "info": [
-            {
-                "isPositive": true,
-                "range": [null, 50],
-                "description": "Water with a nitrate concentration between 0 and 50 mg/l is considered ideal for most uses.",
-                "reference": null,
-                "tips": null
-            },
             {
                 "isPositive": false,
                 "range": [50, null],
@@ -129,16 +112,10 @@
         "id": 5,
         "name": "Nitrite (NO₂)",
         "idealRange": [null, 0.5],
+        "domainRange": [0, 1],
         "unitOfMeasurement": "mg/l",
         "displaysAsChart": true,
         "info": [
-            {
-                "isPositive": true,
-                "range": [null, 0.5],
-                "description": "Water with a nitrite concentration between 0 and 0.5 mg/l is considered ideal for most uses.",
-                "reference": null,
-                "tips": null
-            },
             {
                 "isPositive": false,
                 "range": [0.5, null],
@@ -154,16 +131,10 @@
         "id": 6,
         "name": "Ammonium",
         "idealRange": [null, 0.5],
+        "domainRange": [0, 1],
         "unitOfMeasurement": "mg/l",
         "displaysAsChart": true,
         "info": [
-            {
-                "isPositive": true,
-                "range": [null, 0.5],
-                "description": "Water with an ammonium concentration between 0 and 0.5 mg/l is considered ideal for most uses.",
-                "reference": null,
-                "tips": null
-            },
             {
                 "isPositive": false,
                 "range": [0.5, null],
@@ -179,16 +150,10 @@
         "id": 7,
         "name": "Fluoride",
         "idealRange": [null, 1.5],
+        "domainRange": [0, 3],
         "unitOfMeasurement": "mg/l",
         "displaysAsChart": true,
         "info": [
-            {
-                "isPositive": true,
-                "range": [null, 1.5],
-                "description": "Water with a fluoride concentration between 0 and 1.5 mg/l is considered ideal for most uses.",
-                "reference": null,
-                "tips": null
-            },
             {
                 "isPositive": false,
                 "range": [1.5, null],
@@ -204,13 +169,14 @@
         "id": 8,
         "name": "Chloride",
         "idealRange": [null, 250],
+        "domainRange": [0, 500],
         "unitOfMeasurement": "mg/l",
         "displaysAsChart": true,
         "info": [
             {
                 "isPositive": true,
                 "range": [null, 250],
-                "description": "Water with a chloride concentration between 0 and 250 mg/l is considered ideal for most uses.",
+                "description": "Example of positive information.",
                 "reference": null,
                 "tips": null
             },
@@ -229,16 +195,10 @@
         "id": 9,
         "name": "Conductivity",
         "idealRange": [null, 2500],
+        "domainRange": [0, 3000],
         "unitOfMeasurement": "µS/cm",
         "displaysAsChart": true,
         "info": [
-            {
-                "isPositive": true,
-                "range": [null, 2500],
-                "description": "Water with a conductivity between 0 and 2500 µS/cm is considered ideal for most uses.",
-                "reference": null,
-                "tips": null
-            },
             {
                 "isPositive": false,
                 "range": [2500, null],
@@ -254,13 +214,14 @@
         "id": 10,
         "name": "Coliform bacteria",
         "idealRange": [null, null],
+        "domainRange": [0, 1],
         "unitOfMeasurement": "u.f.c./100 ml",
         "displaysAsChart": false,
         "info": [
             {
                 "isPositive": true,
                 "range": [null, 0.1],
-                "description": "Coliform bacteria concentration is within acceptable limits.",
+                "description": "Ideal",
                 "reference": null,
                 "tips": [
                     "In any case, if the water will be used for drinking, consider installing a purifier."
@@ -281,13 +242,14 @@
         "id": 11,
         "name": "Escherichia coli",
         "idealRange": [null, null],
+        "domainRange": [0, 1],
         "unitOfMeasurement": "u.f.c./100 ml",
         "displaysAsChart": false,
         "info": [
             {
                 "isPositive": true,
                 "range": [null, 0.1],
-                "description": "E. Coli concentration is within acceptable limits.",
+                "description": "Ideal",
                 "reference": null,
                 "tips": [
                     "In any case, if the water will be used for drinking, consider installing a purifier."
