@@ -12,8 +12,8 @@ struct ZonesMapView: UIViewRepresentable {
     @EnvironmentObject var modelData: ModelData
     
     func makeUIView(context: Context) -> MKMapView {
-        modelData.mkMapView.delegate = context.coordinator
         let mapView = modelData.mkMapView
+        modelData.mkMapView.delegate = context.coordinator
         
         mapView.region = modelData.cameraRegion
         mapView.pointOfInterestFilter = .excludingAll
@@ -28,7 +28,11 @@ struct ZonesMapView: UIViewRepresentable {
             let annotation = MKPointAnnotation()
             annotation.coordinate = zone.center
             annotation.title = zone.name
-            annotation.subtitle = String(zone.id)
+            mapView.addAnnotation(annotation)
+        }
+        
+        for fountain in modelData.naplesFountains {
+            let annotation = FountainAnnotation(fountain: fountain)
             mapView.addAnnotation(annotation)
         }
         
@@ -41,16 +45,20 @@ struct ZonesMapView: UIViewRepresentable {
                 uiView.setRegion(modelData.cameraRegion, animated: true)
             }
         }
+        
+        
+        uiView.delegate?.mapView?(uiView, regionDidChangeAnimated: false)
     }
     
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
-        
+    
     class Coordinator: NSObject, MKMapViewDelegate, CLLocationManagerDelegate, UIGestureRecognizerDelegate {
         var parent: ZonesMapView
         var locationManager = CLLocationManager()
         var gestureRecognizer = UITapGestureRecognizer()
+        var selectedAnnotation: MKAnnotation?
         
         init(_ parent: ZonesMapView) {
             self.parent = parent
@@ -59,63 +67,27 @@ struct ZonesMapView: UIViewRepresentable {
             self.locationManager.delegate = self
             self.locationManager.requestWhenInUseAuthorization()
             
-            self.gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+            self.gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleZoneTap))
             self.gestureRecognizer.delegate = self
             self.parent.modelData.mkMapView.addGestureRecognizer(gestureRecognizer)
         }
         
-        func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-            if let polygonOverlay = overlay as? MKPolygon {
-                let renderer = MKPolygonRenderer(polygon: polygonOverlay)
-                renderer.fillColor = UIColor.customBlue.withAlphaComponent(0.1)
-                renderer.strokeColor = UIColor.customBlue
-                renderer.lineWidth = 2
-                return renderer
-            }
-            return MKOverlayRenderer()
-        }
-        
-        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-            guard annotation is MKPointAnnotation else { return nil }
-            
-            let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "ZoneLabel")
-            annotationView.canShowCallout = false
-            annotationView.backgroundColor = .clear
-            
-            let label = UILabel()
-            label.text = annotation.title ?? ""
-            label.textColor = .black
-            label.backgroundColor = UIColor.white.withAlphaComponent(0.8)
-            label.font = UIFont.systemFont(ofSize: 8)
-            label.textAlignment = .center
-            label.layer.cornerRadius = 8
-            label.layer.masksToBounds = true
-            
-            let padding: CGFloat = 6
-            label.frame = CGRect(
-                x: 0,
-                y: 0,
-                width: label.intrinsicContentSize.width + 2 * padding,
-                height: label.intrinsicContentSize.height + 2 * padding
-            )
-            annotationView.addSubview(label)
-            annotationView.frame = label.frame
-            
-            return annotationView
-        }
-        
+        // Map view delegate
+        // Checar que el mapa esté lo suficientemente zoomeado para mostrar las annotations
         func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
             let latitudeDelta = mapView.region.span.latitudeDelta
-
-            let threshold: CLLocationDegrees = 0.08
-
+            let threshold: CLLocationDegrees = 0.06
+            
             for annotation in mapView.annotations {
-                if !(annotation is MKUserLocation), let view = mapView.view(for: annotation) {
-                    view.isHidden = latitudeDelta > threshold
+                guard !(annotation is MKUserLocation), let view = mapView.view(for: annotation) else {
+                    continue
                 }
+                view.isHidden = latitudeDelta > threshold || (annotation is FountainAnnotation && !parent.modelData.showingFountains) || (annotation is MKPointAnnotation && parent.modelData.showingFountains)
             }
         }
-
+        
+        // Location manager delegate
+        // Ask for permission 👉👈
         func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
             switch manager.authorizationStatus {
             case .authorizedWhenInUse, .authorizedAlways:
@@ -126,12 +98,15 @@ struct ZonesMapView: UIViewRepresentable {
             }
         }
         
-        @objc func handleTap(_ gesture: UITapGestureRecognizer) {
-            let tapLocation = gestureRecognizer.location(in: parent.modelData.mkMapView)
-            let location = parent.modelData.mkMapView.convert(tapLocation, toCoordinateFrom: parent.modelData.mkMapView)
-            if let zone = parent.modelData.zoneOfLocation(location) {
-                parent.modelData.selectedZone = zone
-            }
-        }
+        // Other functions in ZonesMapAnnotations & ZonesMapInteractions
     }
+}
+
+func openInAppleMaps(coordinate: CLLocationCoordinate2D, name: String) {
+    let placemark = MKPlacemark(coordinate: coordinate)
+    let mapItem = MKMapItem(placemark: placemark)
+    mapItem.name = name
+    mapItem.openInMaps(launchOptions: [
+        MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving
+    ])
 }

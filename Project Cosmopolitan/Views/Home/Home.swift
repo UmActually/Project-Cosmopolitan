@@ -20,7 +20,8 @@ struct Home: View {
                 
                 VStack(alignment: .trailing) {
                     HelpButton()
-                    ZonesMapButton(iconName: "location", action: goToUserLocation)
+                    ToggleFountainsButton()
+                    GoToLocationButton(action: goToUserLocation)
                 }
                 .padding()
             }

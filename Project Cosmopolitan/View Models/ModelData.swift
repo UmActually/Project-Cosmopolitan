@@ -11,6 +11,7 @@ import MapKit
 final class ModelData: ObservableObject {
     @Published var manuallyReloadViews = false
     @Published var mkMapView = MKMapView()
+    @Published var showingFountains = false
     @Published var sheetDetent = PresentationDetent.height(100)
     @Published var selectedZone: Zone?
     @Published var cameraRegion = MKCoordinateRegion(
@@ -23,6 +24,7 @@ final class ModelData: ObservableObject {
     
     var moveCameraRegion = false
     let naplesZones: [Zone] = decodeJSON(from: "Zones")
+    let naplesFountains: [Fountain] = decodeJSON(from: "Fountains")
     let generalInfo: [GeneralInfoItem] = decodeJSON(from: "GeneralInfo")
     
     func zoneOfLocation(_ location: CLLocationCoordinate2D) -> Zone? {
