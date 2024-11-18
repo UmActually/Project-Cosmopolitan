@@ -42,20 +42,20 @@
                 "id": 1,
                 "isPositive": false,
                 "range": [null, 6.5],
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "description": "Water is too acidic. Avoid at all costs drinking, cleaning, cooking or bathing.",
                 "reference": null,
                 "tips": [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    "Check for corrosion in your main metal pipes."
                 ]
             },
             {
                 "id": 2,
                 "isPositive": false,
                 "range": [8.5, null],
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "description": "Water is too alkaline. Avoid at all costs drinking, cleaning, cooking or bathing.",
                 "reference": null,
                 "tips": [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    "Check for scale deposits in your main metal pipes."
                 ]
             }
         ]
@@ -72,7 +72,7 @@
                 "id": 1,
                 "isPositive": false,
                 "range": [null, 100],
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "description": "A minimum of 100 mg/l is required to ensure that the water is not dead. That is, it contains enough minerals to be beneficial to the body.",
                 "reference": "https://www.bartmaes.eu/en/water/is-water-with-a-very-low-dry-residue-dead-water/",
                 "tips": null
             },
@@ -80,10 +80,11 @@
                 "id": 2,
                 "isPositive": false,
                 "range": [500, null],
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "description": "This level of dry residue can negatively impact taste. It is enough to be visible in the form of particles.",
                 "reference": null,
                 "tips": [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    "Check for water pressure issues caused by scale deposits.",
+                    "Consider installing a purifier or limiting the use of water for drinking."
                 ]
             }
         ]
@@ -140,7 +141,7 @@
                 "id": 1,
                 "isPositive": false,
                 "range": [0.5, null],
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "description": "The presence of ammonium in water is a sign of contamination.",
                 "reference": null,
                 "tips": [
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -160,7 +161,7 @@
                 "id": 1,
                 "isPositive": false,
                 "range": [1.5, null],
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "description": "Water with a high fluoride content can cause dental fluorosis.",
                 "reference": null,
                 "tips": [
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -180,7 +181,7 @@
                 "id": 1,
                 "isPositive": true,
                 "range": [null, 250],
-                "description": "Example of positive information.",
+                "description": "These levels of chloride occur naturally, due to the presence of salts and positive ions in general.",
                 "reference": null,
                 "tips": null
             },
@@ -188,7 +189,7 @@
                 "id": 2,
                 "isPositive": false,
                 "range": [250, null],
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "description": "Excessive chloride levels can cause a salty taste in water.",
                 "reference": null,
                 "tips": [
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -208,7 +209,7 @@
                 "id": 1,
                 "isPositive": false,
                 "range": [2500, null],
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "description": "Conductivity this high is a sign of excessive salts in the water.",
                 "reference": null,
                 "tips": [
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -228,7 +229,7 @@
                 "id": 1,
                 "isPositive": true,
                 "range": [null, 0.1],
-                "description": "Ideal",
+                "description": "Always strive for zero.",
                 "reference": null,
                 "tips": [
                     "In any case, if the water will be used for drinking, consider installing a purifier."
@@ -258,7 +259,7 @@
                 "id": 1,
                 "isPositive": true,
                 "range": [null, 0.1],
-                "description": "Ideal",
+                "description": "Always strive for zero.",
                 "reference": null,
                 "tips": [
                     "In any case, if the water will be used for drinking, consider installing a purifier."

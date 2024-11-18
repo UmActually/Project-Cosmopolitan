@@ -2,12 +2,12 @@
     {
         "id": 1,
         "title": "Hardness",
-        "detailText": "The hardness of water is due to the natural presence of calcium and magnesium in it. Total hardness represents the actual hardness and can be expressed in French degrees ‘f’ (1°f = 10 mg/l CaCO₃). Recommended values are between 15 and 50 °f. Regardless of pH and alkalinity, very hard water (>38°f) causes scale deposits in pipes, especially in heating systems, and requires a high amount of detergent for laundry washing. Conversely, soft water (<13°f) can be corrosive to metal pipes."
+        "detailText": "The hardness of water is due to the natural presence of calcium and magnesium in it.\n\nTotal hardness represents the actual hardness and can be expressed in French degrees (f) (1°f = 10 mg/l CaCO₃).Recommended values are between 15 and 50 °f.\n\nRegardless of pH and alkalinity, very hard water (>38°f) causes scale deposits in pipes, especially in heating systems, and requires a high amount of detergent for laundry washing. Conversely, soft water (<13°f) can be corrosive to metal pipes."
     },
     {
         "id": 2,
         "title": "pH",
-        "detailText": "he pH is defined as the negative logarithm of the hydrogen ion concentration, and represents the measure of acidity or basicity of an aqueous solution, resulting from all present chemical equilibria. A neutral solution has a pH of 7; a basic solution has a pH > 7; an acidic solution has a pH < 7."
+        "detailText": "The pH scale is defined as the negative logarithm of the hydrogen ion concentration, and represents the measure of acidity or basicity of an aqueous solution, resulting from all present chemical equilibria. A neutral solution has a pH of 7; a basic solution has a pH > 7; an acidic solution has a pH < 7."
     },
     {
         "id": 3,
