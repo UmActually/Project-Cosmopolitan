@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct HelpButton: View {
     @State private var isExpanded: Bool = false
@@ -68,6 +69,15 @@ struct ToggleFountainsButton: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
                 withAnimation(.spring(duration: 0.4)) {
                     showMessage = false
+                }
+            }
+            // Zoom to actually see fountains/zones
+            if modelData.mkMapView.region.span.latitudeDelta > 0.06 {
+                modelData.moveCameraRegion = true
+                modelData.cameraRegion.center = modelData.mkMapView.region.center
+                modelData.cameraRegion.span = MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
+                DispatchQueue.main.async {
+                    modelData.moveCameraRegion = false
                 }
             }
         } label: {
