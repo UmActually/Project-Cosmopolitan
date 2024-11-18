@@ -13,10 +13,33 @@ struct ZoneDetail: View {
     var body: some View {
         ParameterList()
             .navigationTitle(modelData.selectedZone?.name ?? "No Zone")
-            .toolbar {
-                NavigationLink(destination: GeneralInfoView()) {
-                    Image(systemName: "info.circle")
+            .navigationBarTitleDisplayMode(.large)
+            .scrollContentBackground(.hidden)
+            .background(LinearGradient(
+//                colors: [.zoneDetailTop, .customBlue.opacity(0.15)],
+                colors: [.zoneDetailTop, .customBlue.opacity(0.25)],
+                startPoint: .top, endPoint: .bottom
+            ))
+            .sheet(isPresented: Binding(get: {
+                modelData.selectedParameterID != nil
+            }, set: {
+                if !$0 {
+                    modelData.selectedParameterID = nil
                 }
+            })) {
+                GeneralInfoView()
             }
+            .onAppear {
+                modelData.expandedParameterInfoID = nil
+            }
+    }
+}
+
+#Preview {
+    let modelData = ModelData()
+    modelData.selectedZone = modelData.naplesZones.first!
+    return NavigationStack {
+        ZoneDetail()
+            .environmentObject(modelData)
     }
 }

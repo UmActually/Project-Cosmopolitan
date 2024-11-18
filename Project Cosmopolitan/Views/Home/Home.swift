@@ -10,12 +10,19 @@ import MapKit
 
 struct Home: View {
     @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var userLocationModel: UserLocationModel
     
     var body: some View {
         NavigationStack {
-            ZStack {
+            ZStack(alignment: .topTrailing) {
                 ZonesMapView()
                     .ignoresSafeArea()
+                
+                VStack(alignment: .trailing) {
+                    HelpButton()
+                    ZonesMapButton(iconName: "location", action: goToUserLocation)
+                }
+                .padding()
             }
             .sheet(isPresented: Binding(get: {
                 modelData.selectedZone == nil
@@ -34,6 +41,22 @@ struct Home: View {
             })) {
                 ZoneDetail()
             }
+        }
+    }
+    
+    func goToUserLocation() {
+        guard let location = userLocationModel.userLocation else { return }
+        
+        modelData.sheetDetent = .height(100)
+        modelData.moveCameraRegion = true
+        modelData.cameraRegion = MKCoordinateRegion(
+            center: location,
+            span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
+        )
+
+        // This has to run after the button action ends
+        DispatchQueue.main.async {
+            modelData.moveCameraRegion = false
         }
     }
 }

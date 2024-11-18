@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct Project_CosmopolitanApp: App {
     @StateObject private var modelData = ModelData()
+    @StateObject private var userLocationModel = UserLocationModel()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(modelData)
+                .environmentObject(userLocationModel)
         }
     }
 }

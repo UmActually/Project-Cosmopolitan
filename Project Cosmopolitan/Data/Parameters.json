@@ -2,100 +2,278 @@
     {
         "id": 1,
         "name": "Hardness",
-        "benchmarkValue": null,
-        "minSuggestedValue": 13,
-        "maxSuggestedValue": 38,
-        "unitOfMeasurement": null,
-        "displaysAsChart": true
+        "idealRange": [13, 38],
+        "domainRange": [0, 60],
+        "unitOfMeasurement": "°f",
+        "displaysAsChart": true,
+        "info": [
+            {
+                "id": 1,
+                "isPositive": false,
+                "range": [null, 13],
+                "description": "Soft water, depending on the ions it cantains, can be corrosive to metal pipes.",
+                "reference": "https://qualitywaterlab.com/info/what-is-the-ideal-water-hardness-level/",
+                "tips": [
+                    "Periodically check for corrosion in your main metal pipes."
+                ]
+            },
+            {
+                "id": 3,
+                "isPositive": false,
+                "range": [38, null],
+                "description": "Although hard water is not a health risk, it causes scale deposits in pipes and dull laundry or dishes.",
+                "reference": "https://qualitywaterlab.com/info/what-is-the-ideal-water-hardness-level/",
+                "tips": [
+                    "Use a water softener to reduce the hardness of your water.",
+                    "Check for water pressure issues caused by scale deposits."
+                ]
+            }
+        ]
     },
     {
         "id": 2,
         "name": "pH",
-        "benchmarkValue": null,
-        "minSuggestedValue": 6.5,
-        "maxSuggestedValue": 8.5,
+        "idealRange": [6.5, 8.5],
+        "domainRange": [0, 14],
         "unitOfMeasurement": null,
-        "displaysAsChart": true
+        "displaysAsChart": true,
+        "info": [
+            {
+                "id": 1,
+                "isPositive": false,
+                "range": [null, 6.5],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            },
+            {
+                "id": 2,
+                "isPositive": false,
+                "range": [8.5, null],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 3,
         "name": "Dry residue",
-        "benchmarkValue": null,
-        "minSuggestedValue": 100,
-        "maxSuggestedValue": 500,
+        "idealRange": [100, 500],
+        "domainRange": [0, 1000],
         "unitOfMeasurement": "mg/l",
-        "displaysAsChart": true
+        "displaysAsChart": true,
+        "info": [
+            {
+                "id": 1,
+                "isPositive": false,
+                "range": [null, 100],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": "https://www.bartmaes.eu/en/water/is-water-with-a-very-low-dry-residue-dead-water/",
+                "tips": null
+            },
+            {
+                "id": 2,
+                "isPositive": false,
+                "range": [500, null],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 4,
         "name": "Nitrate (NO₃)",
-        "benchmarkValue": 50,
-        "minSuggestedValue": 0,
-        "maxSuggestedValue": 50,
+        "idealRange": [null, 50],
+        "domainRange": [0, 100],
         "unitOfMeasurement": "mg/l",
-        "displaysAsChart": true
+        "displaysAsChart": true,
+        "info": [
+            {
+                "id": 1,
+                "isPositive": false,
+                "range": [50, null],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 5,
         "name": "Nitrite (NO₂)",
-        "benchmarkValue": 50,
-        "minSuggestedValue": 0,
-        "maxSuggestedValue": 0.5,
+        "idealRange": [null, 0.5],
+        "domainRange": [0, 1],
         "unitOfMeasurement": "mg/l",
-        "displaysAsChart": true
+        "displaysAsChart": true,
+        "info": [
+            {
+                "id": 1,
+                "isPositive": false,
+                "range": [0.5, null],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 6,
         "name": "Ammonium",
-        "benchmarkValue": 0.5,
-        "minSuggestedValue": 0,
-        "maxSuggestedValue": 0.5,
+        "idealRange": [null, 0.5],
+        "domainRange": [0, 1],
         "unitOfMeasurement": "mg/l",
-        "displaysAsChart": true
+        "displaysAsChart": true,
+        "info": [
+            {
+                "id": 1,
+                "isPositive": false,
+                "range": [0.5, null],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 7,
         "name": "Fluoride",
-        "benchmarkValue": 1.5,
-        "minSuggestedValue": 0,
-        "maxSuggestedValue": 1.5,
+        "idealRange": [null, 1.5],
+        "domainRange": [0, 3],
         "unitOfMeasurement": "mg/l",
-        "displaysAsChart": true
+        "displaysAsChart": true,
+        "info": [
+            {
+                "id": 1,
+                "isPositive": false,
+                "range": [1.5, null],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 8,
         "name": "Chloride",
-        "benchmarkValue": 250,
-        "minSuggestedValue": 0,
-        "maxSuggestedValue": 250,
+        "idealRange": [null, 250],
+        "domainRange": [0, 500],
         "unitOfMeasurement": "mg/l",
-        "displaysAsChart": true
+        "displaysAsChart": true,
+        "info": [
+            {
+                "id": 1,
+                "isPositive": true,
+                "range": [null, 250],
+                "description": "Example of positive information.",
+                "reference": null,
+                "tips": null
+            },
+            {
+                "id": 2,
+                "isPositive": false,
+                "range": [250, null],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 9,
         "name": "Conductivity",
-        "benchmarkValue": 2500,
-        "minSuggestedValue": 0,
-        "maxSuggestedValue": 2500,
+        "idealRange": [null, 2500],
+        "domainRange": [0, 3000],
         "unitOfMeasurement": "µS/cm",
-        "displaysAsChart": true
+        "displaysAsChart": true,
+        "info": [
+            {
+                "id": 1,
+                "isPositive": false,
+                "range": [2500, null],
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 10,
         "name": "Coliform bacteria",
-        "benchmarkValue": null,
-        "minSuggestedValue": null,
-        "maxSuggestedValue": null,
+        "idealRange": [null, null],
+        "domainRange": [0, 1],
         "unitOfMeasurement": "u.f.c./100 ml",
-        "displaysAsChart": false
+        "displaysAsChart": false,
+        "info": [
+            {
+                "id": 1,
+                "isPositive": true,
+                "range": [null, 0.1],
+                "description": "Ideal",
+                "reference": null,
+                "tips": [
+                    "In any case, if the water will be used for drinking, consider installing a purifier."
+                ]
+            },
+            {
+                "id": 2,
+                "isPositive": false,
+                "range": [0.1, null],
+                "description": "Coliform bacteria concentration is too high.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     },
     {
         "id": 11,
         "name": "Escherichia coli",
-        "benchmarkValue": null,
-        "minSuggestedValue": null,
-        "maxSuggestedValue": null,
+        "idealRange": [null, null],
+        "domainRange": [0, 1],
         "unitOfMeasurement": "u.f.c./100 ml",
-        "displaysAsChart": false
+        "displaysAsChart": false,
+        "info": [
+            {
+                "id": 1,
+                "isPositive": true,
+                "range": [null, 0.1],
+                "description": "Ideal",
+                "reference": null,
+                "tips": [
+                    "In any case, if the water will be used for drinking, consider installing a purifier."
+                ]
+            },
+            {
+                "id": 2,
+                "isPositive": false,
+                "range": [0.1, null],
+                "description": "E. Coli bacteria concentration is too high.",
+                "reference": null,
+                "tips": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                ]
+            }
+        ]
     }
 ]

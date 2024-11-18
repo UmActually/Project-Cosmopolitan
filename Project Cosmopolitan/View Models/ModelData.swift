@@ -18,8 +18,12 @@ final class ModelData: ObservableObject {
         span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
     )
     
+    @Published var selectedParameterID: Int?
+    @Published var expandedParameterInfoID: Int?
+    
     var moveCameraRegion = false
     let naplesZones: [Zone] = decodeJSON(from: "Zones")
+    let generalInfo: [GeneralInfoItem] = decodeJSON(from: "GeneralInfo")
     
     func zoneOfLocation(_ location: CLLocationCoordinate2D) -> Zone? {
         for (index, overlay) in mkMapView.overlays.enumerated() {
@@ -57,10 +61,6 @@ final class UserLocationModel: NSObject, ObservableObject, CLLocationManagerDele
             locationManager.startUpdatingLocation()
         }
     }
-}
-
-final class GeneralInfoModel: ObservableObject {
-    @Published var generalInfo: [GeneralInfoItem] = decodeJSON(from: "GeneralInfo")
 }
 
 extension MKCoordinateRegion {

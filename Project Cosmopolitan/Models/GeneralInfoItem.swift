@@ -11,7 +11,6 @@ struct GeneralInfoItem: Codable, Identifiable {
     let id: Int
     let title: String
     let detailText: String
-    var isExpanded: Bool
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -24,6 +23,5 @@ struct GeneralInfoItem: Codable, Identifiable {
         id = try container.decode(Int.self, forKey: .id)
         title = try container.decode(String.self, forKey: .title)
         detailText = try container.decode(String.self, forKey: .detailText)
-        isExpanded = false
     }
 }

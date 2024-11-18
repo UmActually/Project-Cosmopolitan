@@ -11,26 +11,48 @@ import Charts
 struct TextParameterView: View {
     let zoneParam: ZoneParameter
     
+    @EnvironmentObject var modelData: ModelData
+    @State private var animatedValue: Double = 0
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text(zoneParam.parameter.name)
-                .font(.headline)
-                .foregroundColor(Color.blue)
-            
-            VStack(alignment: .leading) {
-                HStack {
-                    Text("Detected Value: \(String(format: "%.2f", zoneParam.value))")
-                    if let unit = zoneParam.parameter.unitOfMeasurement {
-                        Text(unit)
-                    }
-                }
+            HStack(alignment: .firstTextBaseline) {
+                // Header with parameter name and detected value
+                Text(zoneParam.parameter.name)
+                    .font(.headline)
+                    .foregroundStyle(.primary)
                 
-                if let min = zoneParam.parameter.minSuggestedValue, let max = zoneParam.parameter.maxSuggestedValue {
-                    Text("Suggested Values: \(String(format: "%.2f", min)) to \(String(format: "%.2f", max))")
+                // Info button to general info view
+                Image(systemName: "info.circle")
+                    .onTapGesture {
+                        modelData.selectedParameterID = zoneParam.parameter.id
+                    }
+                    .foregroundStyle(.customBlue)
+
+                Spacer()
+            }
+            
+            HStack(alignment: .firstTextBaseline) {
+                Text(String(format: "%.2f", zoneParam.value))
+                    .fontDesign(.monospaced)
+                    .font(.title)
+                    .fontWeight(.medium)
+                    .foregroundStyle(.secondary)
+                    
+                if let unit = zoneParam.parameter.unitOfMeasurement {
+                    Text(unit)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
                 }
             }
-            .font(.subheadline)
-            .foregroundColor(.black)
+            
+            VStack {
+                ForEach(zoneParam.currentValueInfo) { info in
+                    ParameterInfoView(info: info)
+                }
+            }
+            .padding(.bottom, 8)
         }
     }
 }
+

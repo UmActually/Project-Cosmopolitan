@@ -8,34 +8,22 @@
 import SwiftUI
 
 struct GeneralInfoView: View {
-    @ObservedObject var generalInfoModel = GeneralInfoModel()
+    @EnvironmentObject var modelData: ModelData
     
     var body: some View {
-        List($generalInfoModel.generalInfo) { $item in
-            Section {
-                if item.isExpanded {
-                    Text(item.detailText)
-                        .font(.subheadline)
-                        .frame(maxWidth: .infinity)
-                }
-            } header: {
-                Button {
-                    withAnimation {
-                        item.isExpanded.toggle()
-                    }
-                } label: {
-                    HStack {
-                        Text(item.title)
-                            .font(.headline)
-                            .foregroundStyle(.accent)
-                        Spacer()
-                        Image(systemName: item.isExpanded ? "chevron.down" : "chevron.right")
-                            .frame(width: 20, height: 20)
+        NavigationStack {
+            if let id = modelData.selectedParameterID {
+                let info = modelData.generalInfo[id - 1]
+                List {
+                    Section {
+                        Text(info.detailText)
+                    } header: {
+                        Text("Detail")
                     }
                 }
+                .navigationTitle(info.title)
             }
         }
-        .navigationTitle("General Information")
     }
 }
 
