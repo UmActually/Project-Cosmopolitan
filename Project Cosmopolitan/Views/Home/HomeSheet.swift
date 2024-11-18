@@ -63,6 +63,7 @@ struct HomeSheet: View {
         var center = zone.center
         center.latitude -= 0.0075 // Shift map up to account for modal below
 
+        modelData.showingFountains = false
         modelData.sheetDetent = .medium
         modelData.moveCameraRegion = true
         modelData.cameraRegion = MKCoordinateRegion(

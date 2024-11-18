@@ -54,7 +54,7 @@ struct GraphParameterView: View {
                 BarMark(
                     x: .value("Parameter", animatedValue)
                 )
-                .foregroundStyle(zoneParam.isWithinRange ? .lightGreen : .rustyRed) // Adjust color based on range
+                .foregroundStyle(zoneParam.isWithinRange ? .lightGreen : .warningOrange) // Adjust color based on range
                 
                 if let benchmark = zoneParam.parameter.upperBound,
                    zoneParam.parameter.lowerBound == nil {
@@ -88,7 +88,7 @@ struct GraphParameterView: View {
             
             VStack {
                 ForEach(zoneParam.currentValueInfo) { info in
-                    ParameterInfoView(info: info)
+                    ParameterInfoDialog(info: info)
                 }
             }
             .padding(.bottom, 8)

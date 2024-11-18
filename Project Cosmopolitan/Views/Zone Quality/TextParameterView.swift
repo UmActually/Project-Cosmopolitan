@@ -48,7 +48,7 @@ struct TextParameterView: View {
             
             VStack {
                 ForEach(zoneParam.currentValueInfo) { info in
-                    ParameterInfoView(info: info)
+                    ParameterInfoDialog(info: info)
                 }
             }
             .padding(.bottom, 8)

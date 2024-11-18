@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ParameterInfoView: View {
+struct ParameterInfoDialog: View {
     let info: ParameterInfo
     
     @EnvironmentObject var modelData: ModelData
@@ -20,11 +20,11 @@ struct ParameterInfoView: View {
         if isExpanded {
             return .textDefault
         }
-        return info.isPositive ? .darkGreen : .darkWarningYellow
+        return info.isPositive ? .darkGreen : .darkWarningOrange
     }
     
     var strokeColor: Color {
-        info.isPositive ? .lightGreen : .warningYellow
+        info.isPositive ? .lightGreen : .warningOrange
     }
     
     var iconName: String {
@@ -49,7 +49,7 @@ struct ParameterInfoView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
                     if isExpanded, let tips = info.tips, !tips.isEmpty {
-                        VStack(alignment: .leading, spacing: 6) {
+                        VStack(alignment: .leading, spacing: 8) {
                             Text("Suggestions")
                                 .bold()
                                 .font(.subheadline.smallCaps())
@@ -57,9 +57,11 @@ struct ParameterInfoView: View {
                             
                             ForEach(tips, id: \.self) { tip in
                                 Text(tip)
-                                    .font(.caption2)
+                                    .font(.subheadline)
+                                    .foregroundStyle(.gray)
                             }
                         }
+                        .padding(.bottom, 6)
                     }
                 }
                 .fixedSize(horizontal: false, vertical: true)

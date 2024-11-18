@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "name": "Via Cesario Console",
+    "location": [
+      40.8358,
+      14.2499
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Parco Virgiliano",
+    "location": [
+      40.8025,
+      14.1941
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Piazza Duca d'Aosta",
+    "location": [
+      40.8393,
+      14.2417
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Piazza Salvatore Giacomo",
+    "location": [
+      40.8168,
+      14.2109
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Piazza San Luigi",
+    "location": [
+      40.8061,
+      14.2142
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Rotonda Diaz",
+    "location": [
+      40.8311,
+      14.2345
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Via Benedetto Croce 1-4",
+    "location": [
+      40.8479,
+      14.2532
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Piazza Dante",
+    "location": [
+      40.8492,
+      14.2518
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Piazza del Ges\u00f9",
+    "location": [
+      40.8473,
+      14.2526
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Piazza Montesanto 21",
+    "location": [
+      40.8456,
+      14.2501
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Piazza Municipio",
+    "location": [
+      40.8419,
+      14.2525
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Piazzetta Nilo",
+    "location": [
+      40.8472,
+      14.2562
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Via Oberdan",
+    "location": [
+      40.848,
+      14.26
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Via Santa Brigida",
+    "location": [
+      40.8416,
+      14.2523
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Piazza Mazzini",
+    "location": [
+      40.8543,
+      14.2605
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Corso Umberto I 265",
+    "location": [
+      40.847,
+      14.2654
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Largo San Francesco",
+    "location": [
+      40.8496,
+      14.2519
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Piazzetta Miracoli 5-9",
+    "location": [
+      40.8611,
+      14.2528
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Via Edoardo Nicolardi 190",
+    "location": [
+      40.8702,
+      14.2427
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Parco Edoardo Nicolardi",
+    "location": [
+      40.871,
+      14.2405
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Via Cardinale Prisco 18",
+    "location": [
+      40.8706,
+      14.2384
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Viale Privato dei Pini 12",
+    "location": [
+      40.8698,
+      14.2393
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Discesa Bellaria",
+    "location": [
+      40.8691,
+      14.2408
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Via Santa Maria delle Grazie a Capodimonte",
+    "location": [
+      40.8637,
+      14.2444
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Tondo Capodimonte 30-34",
+    "location": [
+      40.8678,
+      14.2465
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Via San Gennaro dei Poveri",
+    "location": [
+      40.8603,
+      14.2522
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Via Bosco di Capodimonte 72",
+    "location": [
+      40.86,
+      14.2495
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Vico San Gaudioso (Sanit\u00e0",
+    "location": [
+      40.8562,
+      14.2501
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Via Vergini 32",
+    "location": [
+      40.8574,
+      14.2509
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Piazza Nazionale",
+    "location": [
+      40.8533,
+      14.2697
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Piazza Poderico",
+    "location": [
+      40.8537,
+      14.2725
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Via Gianturco",
+    "location": [
+      40.8471,
+      14.2894
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Largo Proprio di Arianello",
+    "location": [
+      40.8556,
+      14.2784
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Via Nuova Poggioreale",
+    "location": [
+      40.86,
+      14.2857
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Piazzetta due Porte all\u2019Arenella",
+    "location": [
+      40.8527,
+      14.2345
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Parco Mascagni",
+    "location": [
+      40.8534,
+      14.229
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Piazza IV Giornate",
+    "location": [
+      40.851,
+      14.2295
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Piazza Medaglie d\u2019Oro",
+    "location": [
+      40.8516,
+      14.2288
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Largo Madre Teresa di Calcutta",
+    "location": [
+      40.8555,
+      14.2306
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Piazza Francesco Muzii",
+    "location": [
+      40.8484,
+      14.2324
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Via Giambattista Ruoppolo",
+    "location": [
+      40.8492,
+      14.2289
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Via Scarlatti",
+    "location": [
+      40.8487,
+      14.2283
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Parco De Filippo",
+    "location": [
+      40.8493,
+      14.3131
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Piazza Aprea",
+    "location": [
+      40.8476,
+      14.3173
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Via A.C. De Meis 66",
+    "location": [
+      40.8454,
+      14.315
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Via Lago Fusaro",
+    "location": [
+      40.8497,
+      14.3201
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Via Luigi Crisconio 130",
+    "location": [
+      40.8452,
+      14.316
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Via Alberto Marghieri 20",
+    "location": [
+      40.8438,
+      14.312
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Via Bartolo Longo",
+    "location": [
+      40.8471,
+      14.3183
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Piazza della Libert\u00e0",
+    "location": [
+      40.8721,
+      14.2714
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Piazza Luigi di Nocera",
+    "location": [
+      40.8704,
+      14.274
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Piazza Tafuri",
+    "location": [
+      40.873,
+      14.273
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Via Santa Maria a Cubito 648",
+    "location": [
+      40.9052,
+      14.2456
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Via Emilio Scaglione",
+    "location": [
+      40.9,
+      14.2422
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Via Tirone",
+    "location": [
+      40.9033,
+      14.2438
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Piazza Nicola Romano",
+    "location": [
+      40.9021,
+      14.245
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Via Alfredo Capelli",
+    "location": [
+      40.863,
+      14.216
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Via Comunale Cannavino 6",
+    "location": [
+      40.8625,
+      14.212
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Piazza Salvemini",
+    "location": [
+      40.821,
+      14.203
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Via Consalvo 101",
+    "location": [
+      40.8208,
+      14.21
+    ]
+  }
+]

@@ -16,7 +16,6 @@ struct ZoneDetail: View {
             .navigationBarTitleDisplayMode(.large)
             .scrollContentBackground(.hidden)
             .background(LinearGradient(
-//                colors: [.zoneDetailTop, .customBlue.opacity(0.15)],
                 colors: [.zoneDetailTop, .customBlue.opacity(0.25)],
                 startPoint: .top, endPoint: .bottom
             ))
@@ -28,6 +27,7 @@ struct ZoneDetail: View {
                 }
             })) {
                 GeneralInfoView()
+                    .presentationDetents([.medium])
             }
             .onAppear {
                 modelData.expandedParameterInfoID = nil
