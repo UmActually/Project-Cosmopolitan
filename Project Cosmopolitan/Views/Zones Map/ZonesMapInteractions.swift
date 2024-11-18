@@ -22,6 +22,10 @@ extension ZonesMapView.Coordinator {
     // Gesture recognizer delegate
     // Conditionally prevents that tapping on a fountain triggers the recognizer
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        if !parent.modelData.showingFountains {
+            return true
+        }
+        
         let mapView = parent.modelData.mkMapView
         let tapLocation = touch.location(in: mapView)
         
