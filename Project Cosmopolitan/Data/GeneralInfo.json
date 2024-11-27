@@ -42,17 +42,17 @@
     {
         "id": 9,
         "title": "Conductivity",
-        "detailText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "detailText": "Conductivity is a measure of the ability of water to pass an electrical current. This ability directly depends on the concentration of conductive ions in the water, such as chlorides, alkalis, carbonate, and sulphide compounds, and dissolved salts. Changes in conductivity can indicate the presence of pollutants, such as agricultural runoff, sewage leaks, or industrial effluent."
     },
     {
         "id": 10,
         "title": "Coliform bacteria",
-        "detailText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "detailText": "Coliform bacteria are bacteria that are always present in the digestive tracts of animals, including humans, and are found in their wastes. They are also found in plant and soil material. Testing for coliform bacteria can be a reasonable indication of whether other pathogenic bacteria are present."
     }
     ,
     {
         "id": 11,
         "title": "Escherichia coli",
-        "detailText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "detailText": "Escherichia coli is the major species in the fecal coliform group. Of the five general groups of bacteria that comprise the total coliforms, only E. coli is generally not found growing and reproducing in the environment. E. coli is considered to be the species of coliform bacteria that is the best indicator of fecal pollution and the possible presence of pathogens."
     }
 ]
